@@ -6,7 +6,7 @@
 #pragma comment(lib,"Ws2_32.lib")
 #define MAXSIZE 65507 //发送数据报文的最大长度
 #define HTTP_PORT 80 //http 服务器端口
-#define tt 1
+#define tt 0
 //Http重要头部数据
 struct HttpHeader {
     char method[4]; // POST 或者 GET，注意有些为 CONNECT，本实验暂不考虑
@@ -24,8 +24,8 @@ char Target_web[1024] = "http://ivpn.hit.edu.cn";//钓鱼原网站
 char Fish_web[1024] = "http://jwts.hit.edu.cn/";//钓鱼网站
 char Fish_host[1024] = "jwts.hit.edu.cn"; //钓鱼主机名
 
-char InvalidIP[] = "128.0.0.1";//屏蔽的用户IP
-BOOL InitSocket();//初始化套接字
+char InvalidIP[] = "127.0.0.1";//屏蔽的用户IP
+BOOL InitSocket();//初始化Socket
 void ParseHttpHead(char* buffer, HttpHeader* httpHeader);//解析HTTP报文头部
 BOOL ConnectToServer(SOCKET* serverSocket, char* host);//连接到服务器
 unsigned int __stdcall ProxyThread(LPVOID lpParameter);//代理线程执行函数,__stdcall关键字，表示使用标准调用约定
@@ -113,20 +113,21 @@ int _tmain(int argc, _TCHAR* argv[])
         return -1;
     }
     printf("代理服务器正在运行，监听端口 %d\n", ProxyPort);
-    SOCKET acceptSocket = INVALID_SOCKET;//用于存储接受到的客户端套接字，初始值为 INVALID_SOCKET.当服务器接收到客户端的连接请求时，会创建一个新的套接字，并将其赋值给 acceptSocket
-    //把socket设置成无效套接字
+    SOCKET acceptSocket = INVALID_SOCKET;//用于存储接受到的客户端Socket，初始值为 INVALID_SOCKET.当服务器接收到客户端的连接请求时，会创建一个新的Socket，并将其赋值给 acceptSocket
+    //把socket设置成无效Socket
     SOCKADDR_IN acceptAddr; //自定义变量，用来获得用户的IP。这个变量是一个结构体，用于存储客户端的IP地址和端口号
     ProxyParam* lpProxyParam;
     HANDLE hThread;//用于存储接受客户端连接的线程句柄
     DWORD dwThreadID;//unsigned long，无符号32位整型,线程 ID 是线程的唯一标识符,存储接受客户端连接的线程 ID
     //代理服务器不断监听
-    while (TRUE) {//使用accept()函数接受客户端的连接请求，并返回一个新的套接字acceptSocket用于通信。
+    while (TRUE) {//使用accept()函数接受客户端的连接请求，并返回一个新的SocketacceptSocket用于通信。
         //同时，将客户端的IP地址存储在acceptAddr结构体中，并获取客户端的IP地址字符串
         acceptSocket = accept(ProxyServer, (SOCKADDR*)&acceptAddr, &addrlen);
-        printf("===============用户IP地址为%s===============\n", inet_ntoa(acceptAddr.sin_addr));
+        printf("-------------------------------------------------------------\n");
+        printf("当前用户ip为%s\n", inet_ntoa(acceptAddr.sin_addr));
         if (strcmp(inet_ntoa(acceptAddr.sin_addr), InvalidIP) == 0)//屏蔽用户ip
         {
-            printf("\n\n===============该用户不允许访问===============\n\n");
+            printf("\n\n用户被拒绝访问\n\n");
         }
         else {
             if (tt==0)
@@ -156,7 +157,7 @@ int _tmain(int argc, _TCHAR* argv[])
         }
         Sleep(200);
     }
-    closesocket(ProxyServer);//关闭代理服务器的套接字
+    closesocket(ProxyServer);//关闭代理服务器的Socket
     WSACleanup();//清理 Winsock 库的资源
     return 0;
 }
@@ -165,15 +166,15 @@ int _tmain(int argc, _TCHAR* argv[])
 // FullName: InitSocket
 // Access: public
 // Returns: BOOL
-// Qualifier: 初始化套接字
+// Qualifier: 初始化Socket
 //************************************
 
-BOOL InitSocket() //初始化套接字
+BOOL InitSocket() //初始化Socket
 {
-    //加载套接字库（必须）
+    //加载Socket库（必须）
     WORD wVersionRequested;//16位整数类型，用于表示版本号
-    WSADATA wsaData;//这是一个结构体类型，用于存储Winsock库的版本信息、套接字选项等
-    //套接字加载时错误提示
+    WSADATA wsaData;//这是一个结构体类型，用于存储Winsock库的版本信息、Socket选项等
+    //Socket加载时错误提示
     int err;
     //版本 2.2
     wVersionRequested = MAKEWORD(2, 2);//指定要加载的Winsock库的版本（必须）
@@ -191,24 +192,24 @@ BOOL InitSocket() //初始化套接字
         WSACleanup();//调用WSACleanup()函数来清理Windows Socket库
         return FALSE;
     }
-    //创建套接字
+    //创建Socket
     ProxyServer = socket(AF_INET, SOCK_STREAM, 0);//AF_INET 参数表示使用 IPv4 地址族,SOCK_STREAM 参数使用 TCP 协议进行通信,0 参数表示使用默认的传输协议
-    if (INVALID_SOCKET == ProxyServer)//INVALID_SOCKET 是一个宏，用于表示无效的套接字。INVALID_SOCKET 的值为 -1
+    if (INVALID_SOCKET == ProxyServer)//INVALID_SOCKET 是一个宏，用于表示无效的Socket。INVALID_SOCKET 的值为 -1
     {
-        printf("创建套接字失败，错误代码为： %d\n", WSAGetLastError());
+        printf("创建Socket失败，错误代码为： %d\n", WSAGetLastError());
         return FALSE;//WSAGetLastError() 函数获取最近一次发生的 Winsock 错误代码
     }
     //设置代理服务器的地址信息，包括地址族、端口号和 IP 地址
     ProxyServerAddr.sin_family = AF_INET;//地址族ipv4
     ProxyServerAddr.sin_port = htons(ProxyPort); // 将代理端口转换为网络字节顺序，并将其设置为ProxyServerAddr结构体的sin_port字段
     ProxyServerAddr.sin_addr.S_un.S_addr = inet_addr("127.0.0.1");//设置IP地址
-    //将一个套接字（ProxyServer）绑定到一个指定的地址（ProxyServerAddr）。如果绑定失败，程序将输出“绑定套接字失败”并返回FALSE
+    //将一个Socket（ProxyServer）绑定到一个指定的地址（ProxyServerAddr）。如果绑定失败，程序将输出“绑定Socket失败”并返回FALSE
     if (bind(ProxyServer, (SOCKADDR*)&ProxyServerAddr, sizeof(SOCKADDR)) == SOCKET_ERROR)
     {
-        printf("绑定套接字失败\n");
+        printf("绑定Socket失败\n");
         return FALSE;
     }
-    //函数的第一个参数是用于监听的套接字，第二个参数是请求队列长度，即等待连接的客户端数量。如果请求队列已满，新的连接请求将被拒绝
+    //函数的第一个参数是用于监听的Socket，第二个参数是请求队列长度，即等待连接的客户端数量。如果请求队列已满，新的连接请求将被拒绝
     //listen监听，SOMAXCONN由系统来决定请求队列长度,5
     if (listen(ProxyServer, SOMAXCONN) == SOCKET_ERROR) {
         printf("监听端口%d 失败", ProxyPort);
@@ -245,7 +246,7 @@ unsigned int __stdcall ProxyThread(LPVOID lpParameter)
     int ret;//用于存储函数返回值
     FILE* fp;
     //第一次接收客户端请求，将该请求缓存下来，存到本地文件中
-    //使用recv函数从客户端套接字((ProxyParam*)lpParameter)->clientSocket中接收数据
+    //使用recv函数从客户端Socket((ProxyParam*)lpParameter)->clientSocket中接收数据
     //数据存储在Buffer数组中，最大接收长度为MAXSIZE，阻塞模式为0。recvSize表示接收到的数据大小
     recvSize = recv(((ProxyParam*)lpParameter)->clientSocket, Buffer, MAXSIZE, 0);
     HttpHeader* httpHeader = new HttpHeader();
@@ -260,12 +261,11 @@ unsigned int __stdcall ProxyThread(LPVOID lpParameter)
     ParseHttpHead(CacheBuffer, httpHeader);     //解析HTTP报文头部
     //printf("HTTP请求报文如下：\n%s\n", Buffer);
     ZeroMemory(date_str, 30);
-    printf("httpHeader->url : %s\n", httpHeader->url);
+    printf("Header中url : %s\n", httpHeader->url);
     makeFilename(httpHeader->url, filename);
     //printf("filename是 %s\n", filename);
     if ((fopen_s(&in, filename, "r")) == 0)
     {
-        printf("\n有缓存\n");
 
         getfileDate(in, date_str);//得到本地缓存文件中的日期date_str
         fclose(in);
@@ -283,7 +283,7 @@ unsigned int __stdcall ProxyThread(LPVOID lpParameter)
     }
     //添加钓鱼功能
     if (strstr(httpHeader->url, Target_web) != NULL) {
-        printf("%s网站钓鱼成功，被转移至%s\n", Target_web, Fish_web);
+        printf("网站钓鱼成功，%s===>%s\n", Target_web, Fish_web);
         memcpy(httpHeader->host, Fish_host, strlen(Fish_host) + 1);//替换主机名
         memcpy(httpHeader->url, Fish_web, strlen(Fish_web) + 1);//替换url
     }
@@ -317,7 +317,7 @@ unsigned int __stdcall ProxyThread(LPVOID lpParameter)
     }
     //错误处理
 error:
-    printf("关闭套接字\n\n");
+    printf("关闭Socket\n\n");
     Sleep(200);
     closesocket(((ProxyParam*)lpParameter)->clientSocket);
     closesocket(((ProxyParam*)lpParameter)->serverSocket);
@@ -381,7 +381,7 @@ void ParseHttpHead(char* buffer, HttpHeader* httpHeader)
 // FullName: ConnectToServer
 // Access: public
 // Returns: BOOL
-// Qualifier: 根据主机创建目标服务器套接字，并连接
+// Qualifier: 根据主机创建目标服务器Socket，并连接
 // Parameter: SOCKET * serverSocket
 // Parameter: char * host
 //************************************
@@ -396,12 +396,12 @@ BOOL ConnectToServer(SOCKET* serverSocket, char* host) {
     //将HOSTENT结构体中的IP地址转换为in_addr类型，并将其赋值给serverAddr.sin_addr.s_addr
     in_addr Inaddr = *((in_addr*)*hostent->h_addr_list);
     serverAddr.sin_addr.s_addr = inet_addr(inet_ntoa(Inaddr));//IP地址从in_addr类型转换为s_addr类型
-    *serverSocket = socket(AF_INET, SOCK_STREAM, 0);//创建套接字
-    if (*serverSocket == INVALID_SOCKET)//判断套接字是否有效
+    *serverSocket = socket(AF_INET, SOCK_STREAM, 0);//创建Socket
+    if (*serverSocket == INVALID_SOCKET)//判断Socket是否有效
     {
         return FALSE;
     }
-    if (connect(*serverSocket, (SOCKADDR*)&serverAddr, sizeof(serverAddr)) == SOCKET_ERROR) //判断套接字是否连接到地址
+    if (connect(*serverSocket, (SOCKADDR*)&serverAddr, sizeof(serverAddr)) == SOCKET_ERROR) //判断Socket是否连接到地址
     {
         closesocket(*serverSocket);
         return FALSE;
@@ -490,7 +490,7 @@ void storefileCache(char* buffer, char* url) {
         fopen_s(&out, filename, "w+");
         fwrite(buffer, sizeof(char), strlen(buffer), out);//使用fopen_s函数以写入模式打开文件，并将响应内容写入文件
         fclose(out);
-        printf("\n===================更新缓存ok==================\n");
+        printf("\n需要更新本地缓存\n");
     }
 }
 
@@ -504,7 +504,7 @@ void checkfileCache(char* buffer, char* filename)
     p = strtok_s(tempBuffer, delim, &ptr);//提取状态码所在行
     //主机返回的报文中的状态码为304时返回已缓存的内容
     if (strstr(p, "304") != NULL) {
-        printf("\n=================从本机获得缓存====================\n");
+        printf("\n直接读取本地缓存\n");
         ZeroMemory(buffer, strlen(buffer));
         FILE* in = NULL;
         if ((fopen_s(&in, filename, "r")) == 0) {
