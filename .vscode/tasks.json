@@ -5,6 +5,8 @@
         "command": "C:\\mingw64\\bin\\g++.exe",
         "args": [
             // "-fdiagnostics-color=always",
+            // "-lwsock32",
+            "-lws2_32",
             "-g",
             "${file}",
             "-o",
