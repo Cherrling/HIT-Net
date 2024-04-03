@@ -1,0 +1,5 @@
+﻿  main.cpp
+C:\Code\HIT-Net\ex1\main.cpp(85,11): warning C4101: “dwThreadID”: 未引用的局部变量
+C:\Code\HIT-Net\ex1\main.cpp(278,81): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+C:\Code\HIT-Net\ex1\main.cpp(208,17): warning C4101: “clientAddr”: 未引用的局部变量
+  ex1.vcxproj -> C:\Code\HIT-Net\ex1\x64\Debug\ex1.exe

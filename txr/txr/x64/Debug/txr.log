@@ -1,0 +1,10 @@
+﻿  main.cpp
+C:\Code\HIT-Net\txr\main.cpp(71,11): warning C4101: “dwThreadID”: 未引用的局部变量
+C:\Code\HIT-Net\txr\main.cpp(217,9): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+C:\Code\HIT-Net\txr\main.cpp(224,22): warning C4805: “==”: 在操作中将类型“boolean”与类型“bool”混合不安全
+C:\Code\HIT-Net\txr\main.cpp(227,22): warning C4805: “==”: 在操作中将类型“boolean”与类型“bool”混合不安全
+C:\Code\HIT-Net\txr\main.cpp(167,11): warning C4101: “fp”: 未引用的局部变量
+C:\Code\HIT-Net\txr\main.cpp(157,11): warning C4101: “DateBuffer”: 未引用的局部变量
+C:\Code\HIT-Net\txr\main.cpp(163,17): warning C4101: “clientAddr”: 未引用的局部变量
+C:\Code\HIT-Net\txr\main.cpp(328,13): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  txr.vcxproj -> C:\Code\HIT-Net\txr\x64\Debug\txr.exe

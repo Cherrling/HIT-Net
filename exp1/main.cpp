@@ -6,7 +6,7 @@
 #include <string.h>
 
 //静态加入一个lib库文件,ws2_32.lib文件，提供了对以下网络相关API的支持，若使用其中的API，则应该将ws2_32.lib加入工程
-    // #pragma comment(lib, "Ws2_32.lib")
+    #pragma comment(lib, "Ws2_32.lib")
 
 #define MAXSIZE 65507 // 发送数据报文的最大长度
 #define HTTP_PORT 80  // http 服务器端口

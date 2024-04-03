@@ -1,0 +1,7 @@
+﻿  main.cpp
+C:\Code\HIT-Net\lbw\main.cpp(121,11): warning C4101: “dwThreadID”: 未引用的局部变量
+C:\Code\HIT-Net\lbw\main.cpp(298,81): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+C:\Code\HIT-Net\lbw\main.cpp(305,22): warning C4805: “==”: 在操作中将类型“boolean”与类型“bool”混合不安全
+C:\Code\HIT-Net\lbw\main.cpp(308,22): warning C4805: “==”: 在操作中将类型“boolean”与类型“bool”混合不安全
+C:\Code\HIT-Net\lbw\main.cpp(316,31): error C2065: “task”: 未声明的标识符
+C:\Code\HIT-Net\lbw\main.cpp(425,13): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
