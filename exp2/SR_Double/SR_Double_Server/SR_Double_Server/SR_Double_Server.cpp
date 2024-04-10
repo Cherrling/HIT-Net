@@ -193,6 +193,8 @@ int main(int argc, char* argv[])
 	handle = _open("../../server_origin.txt", 0x0100); //open file for read
 	long length_lvxiya = _filelength(handle); //get length of file
 	printf("%s\n", data);
+	printf("%d\n", length_lvxiya);
+
 	totalPacket = length_lvxiya / 1024 + 1;
 	int recvSize;
 	for (int i = 0; i < SEQ_SIZE; ++i) {
@@ -235,7 +237,7 @@ int main(int argc, char* argv[])
 			printf("Shake hands stage\n");
 			int stage = 0;
 			bool runFlag = true;
-			printf("%s\n", "Begin to test GBN protocol, please don't abort the process");
+			printf("%s\n", "Begin to test SR protocol, please don't abort the process");
 			printf("The  loss  ratio  of  packet  is  %.2f,the  loss  ratio  of  ack is %.2f\n", packetLossRatio, ackLossRatio);
 			//----------------------------------------------------
 			int waitCount = 0;//---------------

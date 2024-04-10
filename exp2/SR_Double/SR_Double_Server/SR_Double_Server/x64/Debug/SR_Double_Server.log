@@ -1,16 +1,16 @@
 ﻿  SR_Double_Server.cpp
-C:\Code\HIT-Net\exp2\SR_Double\SR_Double_Server\SR_Double_Server\SR_Double_Server.cpp(204,24): warning C4305: “初始化”: 从“double”到“float”截断
-C:\Code\HIT-Net\exp2\SR_Double\SR_Double_Server\SR_Double_Server\SR_Double_Server.cpp(205,21): warning C4305: “初始化”: 从“double”到“float”截断
-C:\Code\HIT-Net\exp2\SR_Double\SR_Double_Server\SR_Double_Server\SR_Double_Server.cpp(270,18): warning C4309: “=”: 截断常量值
-C:\Code\HIT-Net\exp2\SR_Double\SR_Double_Server\SR_Double_Server\SR_Double_Server.cpp(271,48): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
-C:\Code\HIT-Net\exp2\SR_Double\SR_Double_Server\SR_Double_Server\SR_Double_Server.cpp(293,15): warning C4477: “printf”: 格式字符串“%2d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
-  C:\Code\HIT-Net\exp2\SR_Double\SR_Double_Server\SR_Double_Server\SR_Double_Server.cpp(293,15):
+C:\Code\HIT-Net\exp2\SR_Double\SR_Double_Server\SR_Double_Server\SR_Double_Server.cpp(206,24): warning C4305: “初始化”: 从“double”到“float”截断
+C:\Code\HIT-Net\exp2\SR_Double\SR_Double_Server\SR_Double_Server\SR_Double_Server.cpp(207,21): warning C4305: “初始化”: 从“double”到“float”截断
+C:\Code\HIT-Net\exp2\SR_Double\SR_Double_Server\SR_Double_Server\SR_Double_Server.cpp(272,18): warning C4309: “=”: 截断常量值
+C:\Code\HIT-Net\exp2\SR_Double\SR_Double_Server\SR_Double_Server\SR_Double_Server.cpp(273,48): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+C:\Code\HIT-Net\exp2\SR_Double\SR_Double_Server\SR_Double_Server\SR_Double_Server.cpp(295,15): warning C4477: “printf”: 格式字符串“%2d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
+  C:\Code\HIT-Net\exp2\SR_Double\SR_Double_Server\SR_Double_Server\SR_Double_Server.cpp(295,15):
   请考虑在格式字符串中使用“%zd”
   
-C:\Code\HIT-Net\exp2\SR_Double\SR_Double_Server\SR_Double_Server\SR_Double_Server.cpp(422,19): warning C4244: “=”: 从“unsigned short”转换到“char”，可能丢失数据
-C:\Code\HIT-Net\exp2\SR_Double\SR_Double_Server\SR_Double_Server\SR_Double_Server.cpp(496,20): warning C4244: “=”: 从“unsigned short”转换到“char”，可能丢失数据
-C:\Code\HIT-Net\exp2\SR_Double\SR_Double_Server\SR_Double_Server\SR_Double_Server.cpp(528,45): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
-C:\Code\HIT-Net\exp2\SR_Double\SR_Double_Server\SR_Double_Server\SR_Double_Server.cpp(526,3): warning C4102: “success”: 未引用的标签
-C:\Code\HIT-Net\exp2\SR_Double\SR_Double_Server\SR_Double_Server\SR_Double_Server.cpp(202,6): warning C4101: “ret”: 未引用的局部变量
-C:\Code\HIT-Net\exp2\SR_Double\SR_Double_Server\SR_Double_Server\SR_Double_Server.cpp(230,8): warning C4101: “recvSize”: 未引用的局部变量
+C:\Code\HIT-Net\exp2\SR_Double\SR_Double_Server\SR_Double_Server\SR_Double_Server.cpp(424,19): warning C4244: “=”: 从“unsigned short”转换到“char”，可能丢失数据
+C:\Code\HIT-Net\exp2\SR_Double\SR_Double_Server\SR_Double_Server\SR_Double_Server.cpp(498,20): warning C4244: “=”: 从“unsigned short”转换到“char”，可能丢失数据
+C:\Code\HIT-Net\exp2\SR_Double\SR_Double_Server\SR_Double_Server\SR_Double_Server.cpp(530,45): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+C:\Code\HIT-Net\exp2\SR_Double\SR_Double_Server\SR_Double_Server\SR_Double_Server.cpp(528,3): warning C4102: “success”: 未引用的标签
+C:\Code\HIT-Net\exp2\SR_Double\SR_Double_Server\SR_Double_Server\SR_Double_Server.cpp(204,6): warning C4101: “ret”: 未引用的局部变量
+C:\Code\HIT-Net\exp2\SR_Double\SR_Double_Server\SR_Double_Server\SR_Double_Server.cpp(232,8): warning C4101: “recvSize”: 未引用的局部变量
   SR_Double_Server.vcxproj -> C:\Code\HIT-Net\exp2\SR_Double\SR_Double_Server\x64\Debug\SR_Double_Server.exe

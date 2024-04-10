@@ -1,0 +1,20 @@
+﻿  client.cpp
+C:\Code\HIT-Net\exp2\SR_C\client.cpp(83,23): warning C4477: “sscanf_s”: 格式字符串“%s”需要类型“unsigned int”的参数，但可变参数 2 拥有了类型“unsigned __int64”
+  C:\Code\HIT-Net\exp2\SR_C\client.cpp(83,23):
+  此参数用作缓冲区大小
+  
+C:\Code\HIT-Net\exp2\SR_C\client.cpp(83,23): warning C4477: “sscanf_s”: 格式字符串“%s”需要类型“unsigned int”的参数，但可变参数 4 拥有了类型“unsigned __int64”
+  C:\Code\HIT-Net\exp2\SR_C\client.cpp(83,23):
+  此参数用作缓冲区大小
+  
+C:\Code\HIT-Net\exp2\SR_C\client.cpp(116,79): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+C:\Code\HIT-Net\exp2\SR_C\client.cpp(145,52): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+C:\Code\HIT-Net\exp2\SR_C\client.cpp(153,79): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+C:\Code\HIT-Net\exp2\SR_C\client.cpp(217,79): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+C:\Code\HIT-Net\exp2\SR_C\client.cpp(241,51): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+C:\Code\HIT-Net\exp2\SR_C\client.cpp(247,79): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+C:\Code\HIT-Net\exp2\SR_C\client.cpp(278,52): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+C:\Code\HIT-Net\exp2\SR_C\client.cpp(285,52): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+C:\Code\HIT-Net\exp2\SR_C\client.cpp(328,10): warning C4244: “初始化”: 从“std::streamsize”转换到“int”，可能丢失数据
+C:\Code\HIT-Net\exp2\SR_C\client.cpp(370,69): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+  SR_C.vcxproj -> C:\Code\HIT-Net\exp2\SR_C\x64\Debug\SR_C.exe

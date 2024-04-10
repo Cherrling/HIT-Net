@@ -202,7 +202,7 @@ int main(int argc, char* argv[])
 		ret = sscanf(buffer, "%s%f%f", &cmd, &packetLossRatio, &ackLossRatio);
 		//开始 GBN 测试，使用 GBN 协议实现 UDP 可靠文件传输 
 		if (!strcmp(cmd, "-test")) {
-			printf("%s\n", "Begin to test GBN protocol, please don't abort the process");
+			printf("%s\n", "Begin to test SR protocol, please don't abort the process");
 			//printf("The  loss  ratio  of  packet  is  %.2f,the  loss  ratio  of  ack is %.2f\n", packetLossRatio, ackLossRatio);
 			printf("包丢失率：  %.2f，ACK消息丢失率： %.2f\n", packetLossRatio, ackLossRatio);
 			int waitCount = 0;
