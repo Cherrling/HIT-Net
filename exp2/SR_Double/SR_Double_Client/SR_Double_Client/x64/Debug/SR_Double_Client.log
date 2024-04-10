@@ -1,0 +1,7 @@
+﻿  SR_Double_Client.cpp
+C:\Code\HIT-Net\exp2\SR_Double\SR_Double_Client\SR_Double_Client\SR_Double_Client.cpp(196,24): warning C4305: “初始化”: 从“double”到“float”截断
+C:\Code\HIT-Net\exp2\SR_Double\SR_Double_Client\SR_Double_Client\SR_Double_Client.cpp(197,21): warning C4305: “初始化”: 从“double”到“float”截断
+C:\Code\HIT-Net\exp2\SR_Double\SR_Double_Client\SR_Double_Client\SR_Double_Client.cpp(233,50): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+C:\Code\HIT-Net\exp2\SR_Double\SR_Double_Client\SR_Double_Client\SR_Double_Client.cpp(250,19): warning C4309: “=”: 截断常量值
+C:\Code\HIT-Net\exp2\SR_Double\SR_Double_Client\SR_Double_Client\SR_Double_Client.cpp(326,20): warning C4244: “=”: 从“unsigned short”转换到“char”，可能丢失数据
+  SR_Double_Client.vcxproj -> C:\Code\HIT-Net\exp2\SR_Double\SR_Double_Client\x64\Debug\SR_Double_Client.exe
