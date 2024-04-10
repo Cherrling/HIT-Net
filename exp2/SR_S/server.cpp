@@ -49,16 +49,16 @@ int main(int argc, char* argv[]) {
 	wVersionRequested = MAKEWORD(2, 2);
 	int err = WSAStartup(wVersionRequested, &wsaData);
 	if (err != 0) {
-		printf("Winsock.dll 加载失败，错误码: %d\n", err);
+		//printf("Winsock.dll 加载失败，错误码: %2d\n", err);
 		return -1;
 	}
 	if (LOBYTE(wsaData.wVersion) != LOBYTE(wVersionRequested) || HIBYTE(wsaData.wVersion) != HIBYTE(wVersionRequested)) {
-		printf("找不到 %d.%d 版本的 Winsock.dll\n", LOBYTE(wVersionRequested), HIBYTE(wVersionRequested));
+		//printf("找不到 %2d.%2d 版本的 Winsock.dll\n", LOBYTE(wVersionRequested), HIBYTE(wVersionRequested));
 		WSACleanup();
 		return -1;
 	}
 	else {
-		printf("Winsock %d.%d 加载成功\n", LOBYTE(wVersionRequested), HIBYTE(wVersionRequested));
+		//printf("Winsock %2d.%2d 加载成功\n", LOBYTE(wVersionRequested), HIBYTE(wVersionRequested));
 	}
 	// 创建服务器套接字
 	SOCKET socketServer = socket(AF_INET, SOCK_DGRAM, IPPROTO_UDP);
@@ -72,12 +72,12 @@ int main(int argc, char* argv[]) {
 	// 绑定端口
 	if (err = bind(socketServer, (SOCKADDR*)&addrServer, sizeof(SOCKADDR))) {
 		err = GetLastError();
-		printf("绑定端口 %d 失败，错误码: % d\n", SERVER_PORT, err);
+		//printf("绑定端口 %2d 失败，错误码: % d\n", SERVER_PORT, err);
 		WSACleanup();
 		return -1;
 	}
 	else {
-		printf("Port： %d ", SERVER_PORT);
+		printf("Port： %2d ", SERVER_PORT);
 	}
 	SOCKADDR_IN addrClient;
 	int status = 0;
@@ -142,7 +142,7 @@ int main(int argc, char* argv[]) {
 			if (recvSize > 0) {
 				if (buffer[0] == 10) {
 					if (!strcmp(buffer + 1, "Finish")) {
-						printf("传输完毕\n");
+						printf("Trans finish\n");
 						start = clock();
 						sendWindow[0].start = start - 1000L;
 						sendWindow[0].buffer[0] = 100;
@@ -171,7 +171,8 @@ int main(int argc, char* argv[]) {
 							ack = Deliver(file, ack);
 						}
 					}
-					printf("收到： seq = %d, data = %s, 发送 ack = %d, 起始 ack = %d\n", seq + 1, buffer + 2, seq + 1, ack + 1);
+					printf("Recv: seq = %2d, data = %s\n", seq + 1, buffer + 2);
+					printf("Send: ack = %2d, Start ack = %2d\n",seq + 1, ack + 1);
 					buffer[0] = 101;
 					buffer[1] = seq + 1;
 					buffer[2] = 0;
@@ -181,7 +182,7 @@ int main(int argc, char* argv[]) {
 			break;
 		case 2://收到完成
 			if (recvSize > 0 && buffer[0] == 10 && !strcmp(buffer + 1, "OK")) {
-				printf("传输成功\n");
+				printf("Trans finish\n");
 				status = 0;
 				outfile.close();
 			}
@@ -195,7 +196,7 @@ int main(int argc, char* argv[]) {
 			if (recvSize > 0) {
 				if (buffer[0] == 10) {
 					if (!strcmp(buffer + 1, "OK")) {
-						printf("开始传输\n");
+						printf("Start Trans\n");
 						start = clock();
 						status = -2;
 					}
@@ -214,10 +215,10 @@ int main(int argc, char* argv[]) {
 				if (ack == seq) {
 					seq = MoveSendWindow(seq);
 				}
-				printf("收到： ack = %d, 当前 seq = %d\n", ack + 1, seq + 1);
+				printf("Recv: ack = %2d, Curr seq = %2d\n", ack + 1, seq + 1);
 			}
 			if (!Send(infile, seq, socketServer, (SOCKADDR*)&addrClient)) {
-				printf("传输结束\n");
+				printf("Trans finish\n");
 				status = -3;
 				start = clock();
 				sendWindow[0].buffer[0] = 100;
@@ -228,7 +229,7 @@ int main(int argc, char* argv[]) {
 		case -3://请求完成
 			if (recvSize > 0 && buffer[0] == 10) {
 				if (!strcmp(buffer + 1, "OK")) {
-					printf("传输成功\n");
+					printf("Trans finish\n");
 					infile.close();
 					status = 0;
 					break;
@@ -243,7 +244,7 @@ int main(int argc, char* argv[]) {
 			break;
 		}
 		if (status != 0 && clock() - start > 5000L) {
-			printf("通信超时\n");
+			printf("Timeout\n");
 			status = 0;
 			outfile.close();
 			continue;
@@ -303,7 +304,7 @@ int Send(ifstream& infile, int seq, SOCKET socket, SOCKADDR* addr) {
 		else {
 			continue;
 		}
-		printf("发送： seq = %d, data = %s\n", j + 1, sendWindow[j].buffer + 2);
+		printf("Send: seq = %2d, data = %s\n", j + 1, sendWindow[j].buffer + 2);
 		sendto(socket, sendWindow[j].buffer, strlen(sendWindow[j].buffer) + 1, 0, addr, sizeof(SOCKADDR));
 	}
 	return 1;

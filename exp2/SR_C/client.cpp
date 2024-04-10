@@ -52,16 +52,16 @@ int main(int argc, char* argv[]) {
 	wVersionRequested = MAKEWORD(2, 2);
 	int err = WSAStartup(wVersionRequested, &wsaData);
 	if (err != 0) {
-		printf("Winsock.dll 加载失败，错误码: %d\n", err);
+		//printf("Winsock.dll 加载失败，错误码: %2d\n", err);
 		return -1;
 	}
 	if (LOBYTE(wsaData.wVersion) != LOBYTE(wVersionRequested) || HIBYTE(wsaData.wVersion) != HIBYTE(wVersionRequested)) {
-		printf("找不到 %d.%d 版本的 Winsock.dll\n", LOBYTE(wVersionRequested), HIBYTE(wVersionRequested));
+		//printf("找不到 %2d.%2d 版本的 Winsock.dll\n", LOBYTE(wVersionRequested), HIBYTE(wVersionRequested));
 		WSACleanup();
 		return -1;
 	}
 	else {
-		printf("Winsock %d.%d 加载成功\n", LOBYTE(wVersionRequested), HIBYTE(wVersionRequested));
+		//printf("Winsock %2d.%2d 加载成功\n", LOBYTE(wVersionRequested), HIBYTE(wVersionRequested));
 	}
 	// 创建客户端套接字
 	SOCKET socketClient = socket(AF_INET, SOCK_DGRAM, 0);
@@ -78,6 +78,9 @@ int main(int argc, char* argv[]) {
 	clock_t now;
 	int seq;
 	int ack;
+	printf("************************************************************\n");
+	printf("up <filename> 上传\n");
+	printf("dl <filename> 下载\n");
 	while (true) {
 		gets_s(cmdBuffer, 50);
 		sscanf_s(cmdBuffer, "%s%s", cmd, sizeof(cmd) - 1, fileName, sizeof(fileName) - 1);
@@ -99,7 +102,7 @@ int main(int argc, char* argv[]) {
 				case 0:
 					if (recvSize > 0 && buffer[0] == 100) {
 						if (!strcmp(buffer + 1, "OK")) {
-							printf("开始上传\n");
+							printf("Start Upload\n");
 							start = clock();
 							status = 1;
 							sendWindow[0].start = 0L;
@@ -125,10 +128,10 @@ int main(int argc, char* argv[]) {
 						if (ack == seq) {
 							seq = MoveSendWindow(seq);
 						}
-						printf("收到： ack = %d, 当前 seq = %d\n", ack + 1, seq + 1);
+						printf("Recv： ack = %2d, Curr seq = %2d\n", ack + 1, seq + 1);
 					}
 					if (!Send(infile, seq, socketClient, (SOCKADDR*)&addrServer)) {
-						printf("上传完成\n");
+						printf("Upload success\n");
 						status = 2;
 						start = clock();
 						sendWindow[0].buffer[0] = 10;
@@ -155,18 +158,13 @@ int main(int argc, char* argv[]) {
 				default:
 					break;
 				}
-				if (status == -1) {
-					printf("服务器拒绝请求\n");
-					infile.close();
-					break;
-				}
 				if (status == 3) {
-					printf("上传成功\n");
+					printf("Upload Success\n");
 					infile.close();
 					break;
 				}
 				if (clock() - start >= 5000L) {
-					printf("超时，结束通信\n");
+					printf("Timeout\n");
 					infile.close();
 					break;
 				}
@@ -176,7 +174,7 @@ int main(int argc, char* argv[]) {
 			}
 		}
 		else if (!strcmp(cmd, "dl")) {
-			printf("下载文件 %s\n", fileName);
+			printf("Dl： %s\n", fileName);
 			strcpy_s(filePath, "./");
 			strcat_s(filePath, fileName);
 			ofstream outfile(filePath);
@@ -198,7 +196,7 @@ int main(int argc, char* argv[]) {
 				case 0:
 					if (recvSize > 0 && buffer[0] == 100) {
 						if (!strcmp(buffer + 1, "OK")) {
-							printf(" 准备下载\n");
+							printf("Prepare To Download\n");
 							start = clock();
 							status = 1;
 							sendWindow[0].buffer[0] = 10;
@@ -224,10 +222,11 @@ int main(int argc, char* argv[]) {
 						buffer[0] = 0;
 					}
 					if (recvSize > 0 && (unsigned char)buffer[0] == 200) {
-						printf("开始下载\n");
+						printf("Start Download\n");
 						start = clock();
 						seq = buffer[1];
-						printf("收到： seq = %d, data = %s, 发送ack = %d\n", seq, buffer + 2, seq);
+						printf("Recv： seq = %2d, data = %s\n", seq, buffer + 2);
+						printf("Send： ack = %2d\n", seq);
 						seq--;
 						recvWindow[seq].used = true;
 						strcpy_s(recvWindow[seq].buffer, strlen(buffer + 2) + 1, buffer + 2);
@@ -271,7 +270,8 @@ int main(int argc, char* argv[]) {
 									ack = Deliver(file, ack);
 								}
 							}
-							printf("收到： seq = %d, data = %s, 发送 ack = %d, 起始 ack = %d\n", seq + 1, buffer + 2, seq + 1, ack + 1);
+							printf("Recv： seq = %2d, data = %s\n", seq + 1, buffer + 2);
+							printf("Send： ack = %2d, Start ack = %2d\n",seq + 1, ack + 1);
 							buffer[0] = 11;
 							buffer[1] = seq + 1;
 							buffer[2] = 0;
@@ -290,18 +290,14 @@ int main(int argc, char* argv[]) {
 				default:
 					break;
 				}
-				if (status == -1) {
-					printf("服务器拒绝请求\n");
-					outfile.close();
-					break;
-				}
+
 				if (status == 3) {
-					printf("下载成功\n");
+					printf("Dl Success\n");
 					outfile.close();
 					break;
 				}
 				if (clock() - start >= 5000L) {
-					printf("通信超时\n");
+					printf("Timeout\n");
 					outfile.close();
 					break;
 				}
@@ -315,7 +311,7 @@ int main(int argc, char* argv[]) {
 		}
 	}
 	closesocket(socketClient);
-	printf("关闭套接字\n");
+	printf("Close Socket\n");
 	WSACleanup();
 	return 0;
 }
@@ -366,7 +362,7 @@ int Send(ifstream& infile, int seq, SOCKET socket, SOCKADDR* addr) {
 		else {
 			continue;
 		}
-		printf("发送： seq = %d, data = %s\n", j + 1, sendWindow[j].buffer + 2);
+		printf("Send： seq = %2d, data = %s\n", j + 1, sendWindow[j].buffer + 2);
 		sendto(socket, sendWindow[j].buffer, strlen(sendWindow[j].buffer) + 1, 0, addr, sizeof(SOCKADDR));
 	}
 	return 1;

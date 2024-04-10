@@ -9,11 +9,11 @@ C:\Code\HIT-Net\exp2\SR_S\server.cpp(102,26): warning C4477: “sscanf_s”: 格
   
 C:\Code\HIT-Net\exp2\SR_S\server.cpp(133,49): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
 C:\Code\HIT-Net\exp2\SR_S\server.cpp(155,50): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
-C:\Code\HIT-Net\exp2\SR_S\server.cpp(178,50): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
-C:\Code\HIT-Net\exp2\SR_S\server.cpp(191,77): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
-C:\Code\HIT-Net\exp2\SR_S\server.cpp(204,50): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
-C:\Code\HIT-Net\exp2\SR_S\server.cpp(240,77): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
-C:\Code\HIT-Net\exp2\SR_S\server.cpp(266,10): warning C4244: “初始化”: 从“std::streamsize”转换到“int”，可能丢失数据
-C:\Code\HIT-Net\exp2\SR_S\server.cpp(290,31): warning C4309: “=”: 截断常量值
-C:\Code\HIT-Net\exp2\SR_S\server.cpp(307,69): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+C:\Code\HIT-Net\exp2\SR_S\server.cpp(179,50): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+C:\Code\HIT-Net\exp2\SR_S\server.cpp(192,77): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+C:\Code\HIT-Net\exp2\SR_S\server.cpp(205,50): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+C:\Code\HIT-Net\exp2\SR_S\server.cpp(241,77): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+C:\Code\HIT-Net\exp2\SR_S\server.cpp(267,10): warning C4244: “初始化”: 从“std::streamsize”转换到“int”，可能丢失数据
+C:\Code\HIT-Net\exp2\SR_S\server.cpp(291,31): warning C4309: “=”: 截断常量值
+C:\Code\HIT-Net\exp2\SR_S\server.cpp(308,69): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
   SR_S.vcxproj -> C:\Code\HIT-Net\exp2\SR_S\x64\Debug\SR_S.exe
