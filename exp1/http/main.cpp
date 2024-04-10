@@ -155,7 +155,7 @@ int _tmain(int argc, _TCHAR* argv[])
 
 
         }
-        Sleep(200);
+        Sleep(100);
     }
     closesocket(ProxyServer);//关闭代理服务器的Socket
     WSACleanup();//清理 Winsock 库的资源

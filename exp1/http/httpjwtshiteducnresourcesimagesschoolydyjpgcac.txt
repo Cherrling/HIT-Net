@@ -1,0 +1,13 @@
+HTTP/1.1 200 
+Server: Server 
+Date: Wed, 03 Apr 2024 10:39:14 GMT
+Content-Type: image/jpeg;charset=UTF-8
+Content-Length: 147180
+Connection: keep-alive
+Set-Cookie: name=value; HttpOnly
+Last-Modified: Mon, 15 Jan 2024 08:08:03 GMT
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type
+
+ÿØÿá
