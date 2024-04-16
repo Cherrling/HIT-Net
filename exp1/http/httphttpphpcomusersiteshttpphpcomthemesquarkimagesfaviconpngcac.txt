@@ -1,0 +1,14 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Tue, 16 Apr 2024 14:02:50 GMT
+Content-Type: image/png
+Content-Length: 18915
+Last-Modified: Sat, 14 Mar 2020 17:51:59 GMT
+Connection: keep-alive
+ETag: "5e6d19bf-49e3"
+Expires: Thu, 16 May 2024 14:02:50 GMT
+Cache-Control: max-age=2592000
+Accept-Ranges: bytes
+
+‰PNG
+

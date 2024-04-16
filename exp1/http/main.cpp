@@ -18,13 +18,20 @@ struct HttpHeader {
     };
 };
 //禁止访问的网站和钓鱼网站是否可以输入选择
-char Invilid_web[1024] = "http://hit.edu.cn/";//不允许访问的网站
 
-char Target_web[1024] = "http://ivpn.hit.edu.cn";//钓鱼原网站
-char Fish_web[1024] = "http://jwts.hit.edu.cn/";//钓鱼网站
-char Fish_host[1024] = "jwts.hit.edu.cn"; //钓鱼主机名
+char Invilid_web[1024] = "http://www.hit.edu.cn/";//不允许访问的网站
 
-char InvalidIP[] = "127.0.0.1";//屏蔽的用户IP
+
+char Invilid_web[1024] = "http://hit.cn/";//不允许访问的网站
+
+//char Target_web[1024] = "http://ivpn.hit.edu.cn";//钓鱼原网站
+
+char Target_web[1024] = "http://http.p2hp.com";//钓鱼原网站
+char Fish_web[1024] = "http://www.hit.edu.cn/";//钓鱼网站
+
+char Fish_host[1024] = "www.hit.edu.cn"; //钓鱼主机名
+
+char InvalidIP[] = "127.0.0.2";//屏蔽的用户IP
 BOOL InitSocket();//初始化Socket
 void ParseHttpHead(char* buffer, HttpHeader* httpHeader);//解析HTTP报文头部
 BOOL ConnectToServer(SOCKET* serverSocket, char* host);//连接到服务器
@@ -246,8 +253,6 @@ unsigned int __stdcall ProxyThread(LPVOID lpParameter)
     int ret;//用于存储函数返回值
     FILE* fp;
     //第一次接收客户端请求，将该请求缓存下来，存到本地文件中
-    //使用recv函数从客户端Socket((ProxyParam*)lpParameter)->clientSocket中接收数据
-    //数据存储在Buffer数组中，最大接收长度为MAXSIZE，阻塞模式为0。recvSize表示接收到的数据大小
     recvSize = recv(((ProxyParam*)lpParameter)->clientSocket, Buffer, MAXSIZE, 0);
     HttpHeader* httpHeader = new HttpHeader();
     if (recvSize <= 0) //判断接收到的数据大小是否小于等于0，如果是，则表示接收数据失败
@@ -267,27 +272,22 @@ unsigned int __stdcall ProxyThread(LPVOID lpParameter)
     if ((fopen_s(&in, filename, "r")) == 0)
     {
 
-        getfileDate(in, date_str);//得到本地缓存文件中的日期date_str
+        get_file_Date(in, date_str);//本地缓存文件中的日期
         fclose(in);
-        //printf("date_str:%s\n", date_str);
         sendnewHTTP(Buffer, date_str);
-        //向服务器发送一个请求，该请求需要增加 “If-Modified-Since” 字段
-        //服务器通过对比时间来判断缓存是否过期
         haveCache = TRUE;
     }
-    //printf("httpHeader的url是%s，不允许访问的是%s\n", httpHeader->url, Invilid_web);
     //网站过滤功能
     if (strcmp(httpHeader->url, Invilid_web) == 0) {
         printf("%s网站被拒绝访问\n", Invilid_web);
         goto error;
     }
-    //添加钓鱼功能
+    //钓鱼功能
     if (strstr(httpHeader->url, Target_web) != NULL) {
         printf("网站钓鱼成功，%s===>%s\n", Target_web, Fish_web);
         memcpy(httpHeader->host, Fish_host, strlen(Fish_host) + 1);//替换主机名
         memcpy(httpHeader->url, Fish_web, strlen(Fish_web) + 1);//替换url
     }
-    //此时数据报存储在了httpHeader中
     delete CacheBuffer;
     //连接发送数据报所在的服务器
     if (!ConnectToServer(&((ProxyParam*)lpParameter)->serverSocket, httpHeader->host)) {
@@ -409,7 +409,7 @@ BOOL ConnectToServer(SOCKET* serverSocket, char* host) {
     return TRUE;
 }
 //访问本地文件，获取本地缓存中的日期
-void getfileDate(FILE* in, char* tempDate)
+void get_file_Date(FILE* in, char* tempDate)
 {
     char field[5] = "Date";
     //ptr，用于存储strtok_s函数的返回值

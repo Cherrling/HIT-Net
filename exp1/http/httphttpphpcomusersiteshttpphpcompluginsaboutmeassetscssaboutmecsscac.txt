@@ -1,0 +1,49 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Tue, 16 Apr 2024 14:02:46 GMT
+Content-Type: text/css; charset=utf-8
+Content-Length: 496
+Last-Modified: Sat, 14 Mar 2020 17:53:44 GMT
+Connection: keep-alive
+ETag: "5e6d1a28-1f0"
+Expires: Thu, 16 May 2024 14:02:46 GMT
+Cache-Control: max-age=2592000
+Accept-Ranges: bytes
+
+.about-me img {
+	-webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+	        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+	font-family: "Open Sans", Helvetica;
+	max-width: 100%;
+	max-height: 250px;
+}
+
+.about-me h4 {
+	margin-top: 5px;
+}
+
+.about-me h3 {
+	font-weight: 600;
+	margin: 5px auto;
+}
+
+.about-me .social-pages a {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.about-me .social-pages a + a {
+	margin-left: 10px;
+}HTTP/1.1 400 Bad Request
+Server: nginx
+Date: Tue, 16 Apr 2024 14:02:46 GMT
+Content-Type: text/html; charset=utf-8
+Connection: close
+
+<html>
+<head><title>400 Bad Request</title><script src="//www.p2hp.com/tj.js?v=4"></script></head>
+<body>
+<center><h1>400 Bad Request</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>

@@ -1,0 +1,11 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Tue, 16 Apr 2024 14:02:49 GMT
+Content-Type: font/woff
+Content-Length: 117372
+Last-Modified: Sat, 14 Mar 2020 17:52:00 GMT
+Connection: keep-alive
+ETag: "5e6d19c0-1ca7c"
+Accept-Ranges: bytes
+
+wOFF

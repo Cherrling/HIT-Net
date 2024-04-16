@@ -1,0 +1,1086 @@
+HTTP/1.1 200 OK
+Content-Type: text/html
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server:      
+Date: Tue, 16 Apr 2024 14:01:45 GMT
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+X-Frame-Options: ALLOW-FROM http://homepage.hit.edu.cn/
+
+3f27
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <!-- HIT OFFICAL WEBSITE -->
+    <!-- Design by LGKJ -->
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+<meta http-equiv="expires" content="0">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="renderer" content="webkit" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>哈尔滨工业大学</title>
+<meta name="keywords" content="哈尔滨工业大学,哈工大,哈工大大学,哈尔滨工大,哈尔滨大学,HIT,哈尔滨工业大学知名校友">
+<meta name="description" content="哈尔滨工业大学（Harbin Institute of Technology），简称“哈工大（HIT）”，坐落于中国北方冰城哈尔滨市，中华人民共和国工业和信息化部直属重点大学，首批“211工程”、“985工程”重点建设院校，“九校联盟(C9)”、“中俄工科大学联盟”、“中国-西班牙大学联盟”主要成员，国家首批“111计划”、“2011计划”、“卓越计划”入选高校，中管副部级建制，由工业和信息化部、教育部、黑龙江省人民政府三方重点共建。">
+<!--
+<link type="text/css" href="/_css/_system/system.css" rel="stylesheet"/>
+<link type="text/css" href="/_upload/site/1/style/3/3.css" rel="stylesheet"/>
+<link type="text/css" href="/_upload/site/00/ee/238/style/212/212.css" rel="stylesheet"/>
+<link type="text/css" href="/_js/_portletPlugs/sudyNavi/css/sudyNav.css" rel="stylesheet" />
+<link type="text/css" href="/_js/_portletPlugs/datepicker/css/datepicker.css" rel="stylesheet" />
+<link type="text/css" href="/_js/_portletPlugs/simpleNews/css/simplenews.css" rel="stylesheet" />
+
+<script language="javascript" src="/_js/jquery.min.js" sudy-wp-context="" sudy-wp-siteId="238"></script>
+<script language="javascript" src="/_js/jquery.sudy.wp.visitcount.js"></script>
+<script type="text/javascript" src="/_js/_portletPlugs/sudyNavi/jquery.sudyNav.js"></script>
+<script type="text/javascript" src="/_js/_portletPlugs/datepicker/js/jquery.datepicker.js"></script>
+<script type="text/javascript" src="/_js/_portletPlugs/datepicker/js/datepicker_lang_HK.js"></script>
+<script></script> -->
+    <link rel="shortcut icon" href="/_upload/tpl/02/df/735/template735/images/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="/_upload/tpl/02/df/735/template735/images/touch-icon-iphone.png">
+<script type="text/javascript" src="/_upload/tpl/02/df/735/template735/extends/extends.js"></script>
+    <link rel="stylesheet" href="/_upload/tpl/02/df/735/template735/css/animate.min.css">
+    <link rel="stylesheet" href="/_upload/tpl/02/df/735/template735/css/slick.css">
+
+<script type="text/javascript">
+
+document.write("<link rel='stylesheet' type='text/css' href='/_upload/tpl/02/df/735/template735/css/style.css?v="+new Date().getTime()+"'>");
+ 
+</script>
+    <link rel="stylesheet" href="/_upload/tpl/02/df/735/template735/css/iconfont.css">
+    <link rel="stylesheet" href="/_upload/tpl/02/df/735/template735/style.css">
+</head>
+
+<body class="index">
+<!-- 头部 -->
+<div class="header">
+  <div class="wp">
+    <div class="logo" frag="窗口01" portletmode="simpleSiteAttri"><a href="/main.htm" title="返回哈尔滨工业大学首页"><img border='0' src='/_upload/site/00/ee/238/logo.png' /></a> </div>
+    <span class="menuBtn"><em class="iconfont"></em></span>
+    <div class="hdr">
+      <div class="con-top">
+        <div class="m-area">
+                        <a href="http://www.hitwh.edu.cn/" target="_blank">哈尔滨工业大学（威海）</a><a href="http://www.hitsz.edu.cn/" target="_blank">哈尔滨工业大学（深圳）</a>
+                    </div>
+                    <div class="m-way" frag="窗口001" portletmode="simpleSudyNavi" configs="{'c9':'0','c4':'_self','c8':'2','c2':'1','c7':'2','c3':'6','c1':'1','c5':'1','c6':'0'}" contents="{'c2':'0', 'c1':'/快速访问通道'}">
+                        					
+					<ul class="wp-menu">
+						
+						<li class="menu-item i1"><span class="tit"><em class="iconfont iconmokuai"></em>快速访问通道
+							
+							<em class="iconfont"></em></span>
+							<ul class="sub-menu con ">
+								
+								<li class="sub-item i1-1"><a class="sub-link" href="http://i.hit.edu.cn" target="_blank">校园门户</a>
+									
+								</li>
+								
+								<li class="sub-item i1-2"><a class="sub-link" href="http://news.hit.edu.cn/" target="_blank">新闻网</a>
+									
+								</li>
+								
+								<li class="sub-item i1-3"><a class="sub-link" href="http://today.hit.edu.cn/" target="_blank">校内信息</a>
+									
+								</li>
+								
+								<li class="sub-item i1-4"><a class="sub-link" href="https://mail.hit.edu.cn/" target="_blank">电子邮箱</a>
+									
+								</li>
+								
+								<li class="sub-item i1-5"><a class="sub-link" href="http://lib.hit.edu.cn/" target="_blank">图书馆</a>
+									
+								</li>
+								
+								<li class="sub-item i1-6"><a class="sub-link" href="http://oa.hit.edu.cn/" target="_blank">办公系统</a>
+									
+								</li>
+								
+								<li class="sub-item i1-7"><a class="sub-link" href="http://www.hit.edu.cn/glgw/list.htm" target="_self">人员招聘</a>
+									
+								</li>
+								
+								<li class="sub-item i1-8"><a class="sub-link" href="https://map.hit.edu.cn/" target="_blank">校园地图</a>
+									
+								</li>
+								
+								<li class="sub-item i1-9"><a class="sub-link" href="http://cgzx.hit.edu.cn/sfw_cms/e?page=cms.psms.gglist&shopping_type=GKCG&typeDetail=XQ" target="_blank">采购信息</a>
+									
+								</li>
+								
+								<li class="sub-item i1-10"><a class="sub-link" href="http://homepage.hit.edu.cn/home-index" target="_blank">教师主页</a>
+									
+								</li>
+								
+								<li class="sub-item i1-11"><a class="sub-link" href="/fwzn_11586/list.htm" target="_self">服务指南</a>
+									
+								</li>
+								
+								<li class="sub-item i1-12"><a class="sub-link" href="http://xxgk.hit.edu.cn/" target="_blank">信息公开</a>
+									
+								</li>
+								
+							</ul>
+							
+						</li>
+						
+					</ul>
+					
+				
+                       
+                    </div>
+                    <div class="lang"><a href="http://en.hit.edu.cn/" target="_blank"><i class="iconfont icondiqiu"></i>ENGLISH</a> | <a href="http://ru.hit.edu.cn/" target="_blank">РУССКИЙ </a></div>
+        <div class="soBox"> 
+          
+          <!--search begin-->
+          <div class="wp-panel search-panel panel-3" frag="面板3">
+            <div class="searchbtn"></div>
+            <div class="wp-window search-window" frag="窗口3" portletmode="search">
+               
+                <!--search component-->
+                <div class="wp-search clearfix">
+                  <form method="post" action="/_web/_search/api/search/new.rst?locale=zh_CN&request_locale=zh_CN&_p=YXM9MjM4JnQ9NzM1JmQ9MjIzNSZwPTEmbT1TTiY_" target="_blank">
+                    <div class="search-input">
+                      <input class="search-title" name="keyword" type="text" placeholder=" ">
+                    </div>
+                    <div class="search-btn">
+                      <input class="search-submit" name="submit" type="submit" value="">
+                    </div>
+                  </form>
+                </div>
+                <!--//copy the above code to customize the search--> 
+              
+            </div>
+          </div>
+          <!--//search end--> 
+        </div>
+      </div>
+      <div class="con-bot"> 
+       <span class="nav clearfix" frag="窗口4" portletmode="simpleSudyNavi" configs="{'c5':'1','c9':'0','c4':'_self','c8':'2','c2':'1','c7':'2','c3':'22','c1':'1','c6':'0'}" contents="{'c2':'0', 'c1':'/首页,/学校概况,/机构设置,/人才培养,/科学研究,/教师队伍,/招生就业,/国际合作,/人才招聘'}">
+       
+        
+        <ul class="nav">
+          
+          <li class="i1"> <a class="v1" href="http://www.hit.edu.cn" target="_self">首页</a> 
+             
+          </li>
+          
+          <li class="i2"> <a class="v1" href="/11530/list.htm" target="_self">学校概况</a> 
+            
+             <div class="con">
+             <div class="pic"></div> 
+            <dl>
+              
+              <dd> <a class="v2" href="/11538/list.htm" target="_self">学校简介</a> 
+              </dd>
+              
+              <dd> <a class="v2" href="/11539/list.htm" target="_self">概况一览</a> 
+              </dd>
+              
+              <dd> <a class="v2" href="/11540/list.htm" target="_self">学校历史</a> 
+              </dd>
+              
+              <dd> <a class="v2" href="/11541/list.htm" target="_self">历任领导</a> 
+              </dd>
+              
+              <dd> <a class="v2" href="/11542/list.htm" target="_self">现任领导</a> 
+              </dd>
+              
+              <dd> <a class="v2" href="/11544/list.htm" target="_self">学校标志</a> 
+              </dd>
+              
+              <dd> <a class="v2" href="/11545/list.htm" target="_self">老照片</a> 
+              </dd>
+              
+              <dd> <a class="v2" href="/11546/list.htm" target="_self">校园导游</a> 
+              </dd>
+              
+              <dd> <a class="v2" href="https://map.hit.edu.cn/" target="_blank">校园地图</a> 
+              </dd>
+              
+              <dd> <a class="v2" href="/11548/list.htm" target="_self">城市概览</a> 
+              </dd>
+              
+              <dd> <a class="v2" href="/11549/list.htm" target="_self">工大映像</a> 
+              </dd>
+              
+            </dl>
+            </div>
+             
+          </li>
+          
+          <li class="i3"> <a class="v1" href="/11532/list.htm" target="_self">机构设置</a> 
+            
+             <div class="con">
+             <div class="pic"></div> 
+            <dl>
+              
+              <dd> <a class="v2" href="/11587/list.htm" target="_self">党群机构</a> 
+              </dd>
+              
+              <dd> <a class="v2" href="/11588/list.htm" target="_self">管理与服务机构</a> 
+              </dd>
+              
+              <dd> <a class="v2" href="/11589/list.htm" target="_self">教学与科研机构</a> 
+              </dd>
+              
+            </dl>
+            </div>
+             
+          </li>
+          
+          <li class="i4"> <a class="v1" href="/11535/list.htm" target="_self">人才培养</a> 
+            
+             <div class="con">
+             <div class="pic"></div> 
+            <dl>
+              
+              <dd> <a class="v2" href="/11558/list.htm" target="_self">人才培养概况</a> 
+              </dd>
+              
+              <dd> <a class="v2" href="http://hituc.hit.edu.cn/" target="_self">本科生教育</a> 
+              </dd>
+              
+              <dd> <a class="v2" href="http://hitgs.hit.edu.cn/" target="_self">研究生教育</a> 
+              </dd>
+              
+              <dd> <a class="v2" href="http://studyathit.hit.edu.cn/" target="_self">国际学生教育</a> 
+              </dd>
+              
+              <dd> <a class="v2" href="http://sce.hit.edu.cn/" target="_self">继续教育</a> 
+              </dd>
+              
+              <dd> <a class="v2" href="/11563/list.htm" target="_self">奖贷学金</a> 
+              </dd>
+              
+            </dl>
+            </div>
+             
+          </li>
+          
+          <li class="i5"> <a class="v1" href="/11533/list.htm" target="_self">科学研究</a> 
+            
+             <div class="con">
+             <div class="pic"></div> 
+            <dl>
+              
+              <dd> <a class="v2" href="http://keyan.hit.edu.cn/" target="_self">科研概况</a> 
+              </dd>
+              
+              <dd> <a class="v2" href="/11575/list.htm" target="_self">学科专业</a> 
+              </dd>
+              
+              <dd> <a class="v2" href="/11576/list.htm" target="_self">重点学科</a> 
+              </dd>
+              
+              <dd> <a class="v2" href="/11580/list.htm" target="_self">学术期刊</a> 
+              </dd>
+              
+              <dd> <a class="v2" href="http://www.hit.edu.cn/11577/list.htm" target="_self">科研平台</a> 
+              </dd>
+              
+            </dl>
+            </div>
+             
+          </li>
+          
+          <li class="i6"> <a class="v1" href="/11534/list.htm" target="_self">教师队伍</a> 
+            
+             <div class="con">
+             <div class="pic"></div> 
+            <dl>
+              
+              <dd> <a class="v2" href="/11564/list.htm" target="_self">总体介绍</a> 
+              </dd>
+              
+              <dd> <a class="v2" href="/11565/list.htm" target="_self">杰出人才</a> 
+              </dd>
+              
+              <dd> <a class="v2" href="/11566/list.htm" target="_self">博士生导师</a> 
+              </dd>
+              
+              <dd> <a class="v2" href="/sssds/list.htm" target="_self">硕士生导师</a> 
+              </dd>
+              
+              <dd> <a class="v2" href="http://homepage.hit.edu.cn/home-index" target="_self">教师搜索</a> 
+              </dd>
+              
+            </dl>
+            </div>
+             
+          </li>
+          
+          <li class="i7"> <a class="v1" href="/11537/list.htm" target="_self">招生就业</a> 
+            
+             <div class="con">
+             <div class="pic"></div> 
+            <dl>
+              
+              <dd> <a class="v2" href="https://zsb.hit.edu.cn/" target="_self">本科生招生</a> 
+              </dd>
+              
+              <dd> <a class="v2" href="http://yzb.hit.edu.cn/" target="_self">研究生招生</a> 
+              </dd>
+              
+              <dd> <a class="v2" href="http://studyathit.hit.edu.cn/" target="_self">国际学生招生</a> 
+              </dd>
+              
+              <dd> <a class="v2" href="http://sce.hit.edu.cn/" target="_self">继续教育招生</a> 
+              </dd>
+              
+              <dd> <a class="v2" href="http://career.hit.edu.cn/" target="_self">就业服务</a> 
+              </dd>
+              
+            </dl>
+            </div>
+             
+          </li>
+          
+          <li class="i8"> <a class="v1" href="http://www.hit.edu.cn/11555/list.htm" target="_self">国际合作</a> 
+            
+             <div class="con">
+             <div class="pic"></div> 
+            <dl>
+              
+              <dd> <a class="v2" href="/11555/list.htm" target="_self">交流概况</a> 
+              </dd>
+              
+              <dd> <a class="v2" href="http://www.international.hit.edu.cn/" target="_self">国际合作</a> 
+              </dd>
+              
+            </dl>
+            </div>
+             
+          </li>
+          
+          <li class="i9"> <a class="v1" href="/11536/list.htm" target="_self">人才招聘</a> 
+            
+             <div class="con">
+             <div class="pic"></div> 
+            <dl>
+              
+              <dd> <a class="v2" href="/11569/list.htm" target="_self">领航学者</a> 
+              </dd>
+              
+              <dd> <a class="v2" href="/11570/list.htm" target="_self">优秀青年科学基金项目(海外)</a> 
+              </dd>
+              
+              <dd> <a class="v2" href="/szxz/list.htm" target="_self">神舟学者</a> 
+              </dd>
+              
+              <dd> <a class="v2" href="/11572/list.htm" target="_self"
+1000
+>博士后</a> 
+              </dd>
+              
+              <dd> <a class="v2" href="/11573/list.htm" target="_self">应聘方式</a> 
+              </dd>
+              
+              <dd> <a class="v2" href="/glgw/list.htm" target="_self">服务管理岗位</a> 
+              </dd>
+              
+            </dl>
+            </div>
+             
+          </li>
+          
+        </ul>
+         
+        
+        </span>
+
+        <div class="soBox"> 
+          <!--search begin-->
+          <div class="wp-panel search-panel panel-3" frag="面板5">
+            <div class="searchbtn"></div>
+            <div class="wp-window search-window" frag="窗口5" portletmode="search">
+               
+                <!--search component-->
+                <div class="wp-search clearfix">
+                  <form method="post" action="/_web/_search/api/search/new.rst?locale=zh_CN&request_locale=zh_CN&_p=YXM9MjM4JnQ9NzM1JmQ9MjIzNSZwPTEmbT1TTiY_" target="_blank">
+                    <div class="search-input">
+                      <input class="search-title" name="keyword" type="text" placeholder=" ">
+                    </div>
+                    <div class="search-btn">
+                      <input class="search-submit" name="submit" type="submit" value="">
+                    </div>
+                  </form>
+                </div>
+                <!--//copy the above code to customize the search--> 
+              
+            </div>
+          </div>
+          <!--//search end--> 
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="header-m">
+  <div class="inner"> <span class="btn-close"><em class="iconfont"></em></span>
+    <div class="lang-m"><a href="http://en.hit.edu.cn/" target="_blank"><i class="iconfont icondiqiu"></i> ENGLISH</a> | <a href="http://ru.hit.edu.cn/" target="_blank">РУССКИЙ </a></div>
+       <div class="soBox-m" frag="窗口003" portletmode="search">
+					 
+                  <!--search component-->
+                  <div class="wp-search clearfix">
+                    <form method="post" action="/_web/_search/api/search/new.rst?locale=zh_CN&request_locale=zh_CN&_p=YXM9MjM4JnQ9NzM1JmQ9MjIzNSZwPTEmbT1TTiY_" target="_blank">
+                      <div class="search-input">
+                        <input class="search-title" name="keyword" type="text" placeholder=" ">
+                      </div>
+                      <div class="search-btn">
+                        <input class="search-submit" name="submit" type="submit" value="">
+                      </div>
+                    </form>
+                  </div>
+                  <!--//copy the above code to customize the search--> 
+                
+    </div>
+    <div frag="窗口6" portletmode="simpleSudyNavi" configs="{'c5':'1','c9':'0','c4':'_self','c8':'2','c2':'1','c7':'2','c3':'20','c1':'1'}" contents="{'c2':'0', 'c1':'/首页,/学校概况,/ 机构设置,/人才培养,/科学研究,/教师队伍,/招生就业,/国际合作,/人才招聘,/快速访问通道'}">  
+      
+      <ul class="nav-m">
+        
+        
+        <li class="i1"> <span class="btn-slide"> <em class="icon1 iconfont"></em>
+                        <em class="icon2 iconfont"></em></span> <a class="v11" href="http://www.hit.edu.cn" target="_self">首页</a> 
+           
+        </li>
+        
+        <li class="i2"> <span class="btn-slide"> <em class="icon1 iconfont"></em>
+                        <em class="icon2 iconfont"></em></span> <a class="v11" href="/11530/list.htm" target="_self">学校概况</a> 
+          
+          <dl class="clearfix">
+            
+            <dd> <a class="v22" href="/11538/list.htm" target="_self">学校简介</a> 
+            </dd>
+            
+            <dd> <a class="v22" href="/11539/list.htm" target="_self">概况一览</a> 
+            </dd>
+            
+            <dd> <a class="v22" href="/11540/list.htm" target="_self">学校历史</a> 
+            </dd>
+            
+            <dd> <a class="v22" href="/11541/list
+7000
+.htm" target="_self">历任领导</a> 
+            </dd>
+            
+            <dd> <a class="v22" href="/11542/list.htm" target="_self">现任领导</a> 
+            </dd>
+            
+            <dd> <a class="v22" href="/11544/list.htm" target="_self">学校标志</a> 
+            </dd>
+            
+            <dd> <a class="v22" href="/11545/list.htm" target="_self">老照片</a> 
+            </dd>
+            
+            <dd> <a class="v22" href="/11546/list.htm" target="_self">校园导游</a> 
+            </dd>
+            
+            <dd> <a class="v22" href="https://map.hit.edu.cn/" target="_blank">校园地图</a> 
+            </dd>
+            
+            <dd> <a class="v22" href="/11548/list.htm" target="_self">城市概览</a> 
+            </dd>
+            
+            <dd> <a class="v22" href="/11549/list.htm" target="_self">工大映像</a> 
+            </dd>
+            
+          </dl>
+           
+        </li>
+        
+        <li class="i3"> <span class="btn-slide"> <em class="icon1 iconfont"></em>
+                        <em class="icon2 iconfont"></em></span> <a class="v11" href="http://www.hit.edu.cn/main.htm" target="_self"> 机构设置</a> 
+          
+          <dl class="clearfix">
+            
+            <dd> <a class="v22" href="/11384/list.htm" target="_self">党群机构</a> 
+            </dd>
+            
+            <dd> <a class="v22" href="/11385/list.htm" target="_self">管理与服务机构</a> 
+            </dd>
+            
+            <dd> <a class="v22" href="/11386/list.htm" target="_self">教学与科研机构</a> 
+            </dd>
+            
+          </dl>
+           
+        </li>
+        
+        <li class="i4"> <span class="btn-slide"> <em class="icon1 iconfont"></em>
+                        <em class="icon2 iconfont"></em></span> <a class="v11" href="/11535/list.htm" target="_self">人才培养</a> 
+          
+          <dl class="clearfix">
+            
+            <dd> <a class="v22" href="/11558/list.htm" target="_self">人才培养概况</a> 
+            </dd>
+            
+            <dd> <a class="v22" href="http://hituc.hit.edu.cn/" target="_self">本科生教育</a> 
+            </dd>
+            
+            <dd> <a class="v22" href="http://hitgs.hit.edu.cn/" target="_self">研究生教育</a> 
+            </dd>
+            
+            <dd> <a class="v22" href="http://studyathit.hit.edu.cn/" target="_self">国际学生教育</a> 
+            </dd>
+            
+            <dd> <a class="v22" href="http://sce.hit.edu.cn/" target="_self">继续教育</a> 
+            </dd>
+            
+            <dd> <a class="v22" href="/11563/list.htm" target="_self">奖贷学金</a> 
+            </dd>
+            
+          </dl>
+           
+        </li>
+        
+        <li class="i5"> <span class="btn-slide"> <em class="icon1 iconfont"></em>
+                        <em class="icon2 iconfont"></em></span> <a class="v11" href="/11533/list.htm" target="_self">科学研究</a> 
+          
+          <dl class="clearfix">
+            
+            <dd> <a class="v22" href="http://keyan.hit.edu.cn/" target="_self">科研概况</a> 
+            </dd>
+            
+            <dd> <a class="v22" href="/11575/list.htm" target="_self">学科专业</a> 
+            </dd>
+            
+            <dd> <a class="v22" href="/11576/list.htm" target="_self">重点学科</a> 
+            </dd>
+            
+            <dd> <a class="v22" href="/11580/list.htm" target="_self">学术期刊</a> 
+            </dd>
+            
+            <dd> <a class="v22" href="http://www.hit.edu.cn/11577/list.htm" target="_self">科研平台</a> 
+            </dd>
+            
+          </dl>
+           
+        </li>
+        
+        <li class="i6"> <span class="btn-slide"> <em class="icon1 iconfont"></em>
+                        <em class="icon2 iconfont"></em></span> <a class="v11" href="/11534/list.htm" target="_self">教师队伍</a> 
+          
+          <dl class="clearfix">
+            
+            <dd> <a class="v22" href="/11564/list.htm" target="_self">总体介绍</a> 
+            </dd>
+            
+            <dd> <a class="v22" href="/11565/list.htm" target="_self">杰出人才</a> 
+            </dd>
+            
+            <dd> <a class="v22" href="/11566/list.htm" target="_self">博士生导师</a> 
+            </dd>
+            
+            <dd> <a class="v22" href="/sssds/list.htm" target="_self">硕士生导师</a> 
+            </dd>
+            
+            <dd> <a class="v22" href="http://homepage.hit.edu.cn/home-index" target="_self">教师搜索</a> 
+            </dd>
+            
+          </dl>
+           
+        </li>
+        
+        <li class="i7"> <span class="btn-slide"> <em class="icon1 iconfont"></em>
+                        <em class="icon2 iconfont"></em></span> <a class="v11" href="/11537/list.htm" target="_self">招生就业</a> 
+          
+          <dl class="clearfix">
+            
+            <dd> <a class="v22" href="https://zsb.hit.edu.cn/" target="_self">本科生招生</a> 
+            </dd>
+            
+            <dd> <a class="v22" href="http://yzb.hit.edu.cn/" target="_self">研究生招生</a> 
+            </dd>
+            
+            <dd> <a class="v22" href="http://studyathit.hit.edu.cn/" target="_self">国际学生招生</a> 
+            </dd>
+            
+            <dd> <a class="v22" href="http://sce.hit.edu.cn/" target="_self">继续教育招生</a> 
+            </dd>
+            
+            <dd> <a class="v22" href="http://career.hit.edu.cn/" target="_self">就业服务</a> 
+            </dd>
+            
+          </dl>
+           
+        </li>
+        
+        <li class="i8"> <span class="btn-slide"> <em class="icon1 iconfont"></em>
+                        <em class="icon2 iconfont"></em></span> <a class="v11" href="http://www.hit.edu.cn/11555/list.htm" target="_self">国际合作</a> 
+          
+          <dl class="clearfix">
+            
+            <dd> <a class="v22" href="/11555/list.htm" target="_self">交流概况</a> 
+            </dd>
+            
+            <dd> <a class="v22" href="http://www.international.hit.edu.cn/" target="_self">国际合作</a> 
+            </dd>
+            
+          </dl>
+           
+        </li>
+        
+        <li class="i9"> <span class="btn-slide"> <em class="icon1 iconfont"></em>
+                        <em class="icon2 iconfont"></em></span> <a class="v11" href="/11536/list.htm" target="_self">人才招聘</a> 
+          
+          <dl class="clearfix">
+            
+            <dd> <a class="v22" href="/11569/list.htm" target="_self">领航学者</a> 
+            </dd>
+            
+            <dd> <a class="v22" href="/11570/list.htm" target="_self">优秀青年科学基金项目(海外)</a> 
+            </dd>
+            
+            <dd> <a class="v22" href="/szxz/list.htm" target="_self">神舟学者</a> 
+            </dd>
+            
+            <dd> <a class="v22" href="/11572/list.htm" target="_self">博士后</a> 
+            </dd>
+            
+            <dd> <a class="v22" href="/11573/list.htm" target="_self">应聘方式</a> 
+            </dd>
+            
+            <dd> <a class="v22" href="/glgw/list.htm" target="_self">服务管理岗位</a> 
+            </dd>
+            
+          </dl>
+           
+        </li>
+        
+        <li class="i10"> <span class="btn-slide"> <em class="icon1 iconfont"></em>
+                        <em class="icon2 iconfont"></em></span> <a class="v11" href="/ksfwtd/list.htm" target="_self">快速访问通道</a> 
+          
+          <dl class="clearfix">
+            
+            <dd> <a class="v22" href="http://i.hit.edu.cn" target="_blank">校园门户</a> 
+            </dd>
+            
+            <dd> <a class="v22" href="http://news.hit.edu.cn/" target="_blank">新闻网</a> 
+            </dd>
+            
+            <dd> <a class="v22" href="http://today.hit.edu.cn/" target="_blank">校内信息</a> 
+            </dd>
+            
+            <dd> <a class="v22" href="https://mail.hit.edu.cn/" target="_blank">电子邮箱</a> 
+            </dd>
+            
+            <dd> <a class="v22" href="http://lib.hit.edu.cn/" target="_blank">图书馆</a> 
+            </dd>
+            
+            <dd> <a class="v22" href="http://oa.hit.edu.cn/" target="_blank">办公系统</a> 
+            </dd>
+            
+            <dd> <a class="v22" href="http://www.hit.edu.cn/glgw/list.htm" target="_self">人员招聘</a> 
+            </dd>
+            
+            <dd> <a class="v22" href="https://map.hit.edu.cn/" target="_blank">校园地图</a> 
+            </dd>
+            
+            <dd> <a class="v22" href="http://cgzx.hit.edu.cn/sfw_cms/e?page=cms.psms.gglist&shopping_type=GKCG&typeDetail=XQ" target="_blank">采购信息</a> 
+            </dd>
+            
+            <dd> <a class="v22" href="http://homepage.hit.edu.cn/home-index" target="_blank">教师主页</a> 
+            </dd>
+            
+            <dd> <a class="v22" href="/fwzn_11586/list.htm" target="_self">服务指南</a> 
+            </dd>
+            
+            <dd> <a class="v22" href="http://xxgk.hit.edu.cn/" target="_blank">信息公开</a> 
+            </dd>
+            
+          </dl>
+           
+        </li>
+        
+      </ul>
+       
+       </div>
+    <div class="m-area"> <a href="http://www.hitwh.edu.cn/" target="_blank">哈尔滨工业大学（威海）</a><a href="http://www.hitsz.edu.cn/" target="_blank">哈尔滨工业大学（深圳）</a> </div>
+  </div>
+</div>
+<!-- 头部 --> 
+<!-- banner -->
+<div class="banner" frag="窗口10" portletmode="simpleNews" configs="{'c1':'1','c29':'1','c39':'300','c38':'100','c21':'0','c4':'1','c6':'43','c9':'0','c12':'0','c30':'0','c37':'1','c31':'0','c16':'1','c27':'320','c15':'0','c32':'','c5':'_blank','c40':'1','c17':'0','c19':'yyyy-MM-dd','c33':'500','c2':'序号,标题,发布时间','c23':'1','c41':'240','c7':'1','c13':'200','c43':'0','c24':'240','c35':'-1:-1','c3':'5','c8':'1','c44':'0','c25':'320','c34':'300','c18':'yyyy-MM-dd','c20':'0','c42':'320','c10':'50','c11':'1','c36':'0','c26':'1','c28':'320','c22':'0','c14':'1'}" contents="{'c2':'0', 'c1':'/大图+视频（2000*1000）'}">
+        <div class="slider">
+        
+        <div class="item">
+          <a href="http://news.hit.edu.cn/2024/0415/c1510a235577/page.htm" target="_blank">
+                   <div class="pic"><img data-src="/_upload/article/images/71/7e/486fb64e415d8eb7a3075bd45095/e637ba9c-6a54-4530-a70f-d974c5e6aaa1.jpg" src="/_upload/article/images/71/7e/486fb64e415d8eb7a3075bd45095/e637ba9c-6a54-4530-a70f-d974c5e6aaa1.jpg"></div>
+               
+          </a>
+             <div id="v"><a href="http://news.hit.edu.cn/2024/0415/c1510a235577/page.htm" target="_blank"><video autoplay muted playsinline="true" x5-playsinline="" webkit-playsinline="" x-webkit-airplay="allow"><source src="" type="video/mp4"></video></a></div>
+          <div class="tit"><a href='http://news.hit.edu.cn/2024/0415/c1510a235577/page.htm' target='_blank' title='哈工大召开党建工作领导小组会议暨全校党纪学习教育部署会'>哈工大召开党建工作领导小组会议暨全校党纪学习教育部署会</a></div>
+        </div>
+      
+        
+        <div class="item">
+          <a href="https://mp.weixin.qq.com/s?__biz=MzI3NzU5NTEwNw==&mid=2247653973&idx=1&sn=75b52d73dae6df5e8e3db404d2d065f7&chksm=eb6f0cd9dc1885cff683a3cdcac3d1a52a420879cfacf97d974771c8e55d6c2e5391a49e24b6&token=387136480&lang=zh_CN#rd" target="_blank">
+                   <div class="pic"><img data-src="/_upload/article/images/16/07/c3e3fb1d4703a434ed120e9b2937/eccfcdd1-ffe9-4683-a4f7-bff89105e182.jpg" src="/_upload/article/images/16/07/c3e3fb1d4703a434ed120e9b2937/eccfcdd1-ffe9-4683-a4f7-bff89105e182.jpg"></div>
+               
+          </a>
+             <div id="v"><a href="https://mp.weixin.qq.com/s?__biz=MzI3NzU5NTEwNw==&mid=2247653973&idx=1&sn=75b52d73dae6df5e8e3db404d2d065f7&chksm=eb6f0cd9dc1885cff683a3cdcac3d1a52a420879cfacf97d974771c8e55d6c2e5391a49e24b6&token=387136480&lang=zh_CN#rd" target="_blank"><video autoplay muted playsinline="true" x5-playsinline="" webkit-playsinline="" x-webkit-airplay="allow"><source src="" type="video/mp4"></video></a></div>
+          <div class="tit"><a href='https://mp.weixin.qq.com/s?__biz=MzI3NzU5NTEwNw==&mid=2247653973&idx=1&sn=75b52d73dae6df5e8e3db404d2d065f7&chksm=eb6f0cd9dc1885cff683a3cdcac3d1a52a420879cfacf97d974771c8e55d6c2e5391a49e24b6&token=387136480&lang=zh_CN#rd' target='_blank' title='挑战！应战！要战！哈工大竞技机器人队奋战到底！'>挑战！应战！要战！哈工大竞技机器人队奋战到底！</a></div>
+        </div>
+      
+        
+        <div class="item">
+          <a href="https://mp.weixin.qq.com/s?__biz=MzI3NzU5NTEwNw==&mid=2247653970&idx=1&sn=7a4289d16f008101735e277675ffe6cd&chksm=eb6f0cdedc1885c8bba478758f2ed9c5aa0f5fbdca60e1b7b676c5fc6aa3f1c19c0b7cfc8437&token=387136480&lang=zh_CN#rd" target="_blank">
+                   <div class="pic"><img data-src="/_upload/article/images/01/d9/7b9883a348df9e4898fcfda5ae3f/fd14f1c1-31b7-4da5-8444-9a61c5f1c8be.jpg" src="/_upload/article/images/01/d9/7b9883a348df9e4898fcfda5ae3f/fd14f1c1-31b7-4da5-8444-9a61c5f1c8be.jpg"></div>
+               
+          </a>
+             <div id="v"><a href="https://mp.weixin.qq.com/s?__biz=MzI3NzU5NTEwNw==&mid=2247653970&idx=1&sn=7a4289d16f008101735e277675ffe6cd&chksm=eb6f0cdedc1885c8bba478758f2ed9c5aa0f5fbdca60e1b7b676c5fc6aa3f1c19c0b7cfc8437&token=387136480&lang=zh_CN#rd" target="_blank"><video autoplay muted playsinline="true" x5-playsinline="" webkit-playsinline="" x-webkit-airplay="allow"><source src="" type="video/mp4"></video></a></div>
+          <div class="tit"><a href='https://mp.weixin.qq.com/s?__biz=MzI3NzU5NTEwNw==&mid=2247653970&idx=1&sn=7a4289d16f008101735e277675ffe6cd&chksm=eb6f0cdedc1885c8bba478758f2ed9c5aa0f5fbdca60e1b7b676c5fc6aa3f1c19c0b7cfc8437&token=387136480&lang=zh_CN#rd' target='_blank' title='揭秘！哈工大暖廊四期方案来了！'>揭秘！哈工大暖廊四期方案来了！</a></div>
+        </div>
+      
+        
+        <div class="item">
+          <a href="https://mp.weixin.qq.com/s?__biz=MzI3NzU5NTEwNw==&mid=2247652708&idx=1&sn=b3aebb268fda1ad96601618a76b21dc3&chksm=eb6f03e8dc188afe98cdd5db94b592c46598ab0eb29edcaf9424c7c47a91dfb7eb8e837b5b4a&token=182104800&lang=zh_CN#rd" target="_blank">
+                   <div class="pic"><img data-src="/_upload/article/images/9f/c9/59c38884425fb76dcc9cf44755ef/fea9456f-35ba-44f4-becc-f04cea323450.jpg" src="/_upload/article/images/9f/c9/59c38884425fb76dcc9cf44755ef/fea9456f-35ba-44f4-becc-f04cea323450.jpg"></div>
+               
+          </a>
+             <div id="v"><a href="https://mp.weixin.qq.com/s?__biz=MzI3NzU5NTEwNw==&mid=2247652708&idx=1&sn=b3aebb268fda1ad96601618a76b21dc3&chksm=eb6f03e8dc188afe98cdd5db94b592c46598ab0eb29edcaf9424c7c47a91dfb7eb8e837b5b4a&token=182104800&lang=zh_CN#rd" target="_blank"><video autoplay muted playsinline="true" x5-playsinline="" webkit-playsinline="" x-webkit-airplay="allow"><source src="" type="video/mp4"></video></a></div>
+          <div class="tit"><a href='https://mp.weixin.qq.com/s?__biz=MzI3NzU5NTEwNw==&mid=2247652708&idx=1&sn=b3aebb268fda1ad96601618a76b21dc3&chksm=eb6f03e8dc188afe98cdd5db94b592c46598ab0eb29edcaf9424c7c47a91dfb7eb8e837b5b4a&token=182104800&lang=zh_CN#rd' target='_blank' title='满“新”欢喜，哈工大学子开学啦！'>满“新”欢喜，哈工大学子开学啦！</a></div>
+        </div>
+      
+        
+        <div class="item">
+          <a href="http://news.hit.edu.cn/2024/0227/c1510a235290/page.htm" target="_blank">
+                   <div class="pic"><img data-src="/_upload/article/images/14/8b/fd9b06c14dd38b9eabd4c1277490/734f0aa2-2801-4600-b75a-b5d01c7355c8.jpg" src="/_upload/article/images/14/8b/fd9b06c14dd38b9eabd4c1277490/734f0aa2-2801-4600-b75a-b5d01c7355c8.jpg"></div>
+               
+          </a>
+             <div id="v"><a href="http://news.hit.edu.cn/2024/0227/c1510a235290/page.htm" target="_blank"><video autoplay muted playsinline="true" x5-playsinline="" webkit-playsinline="" x-webkit-airplay="allow"><source src="" type="video/mp4"></video></a></div>
+          <div class="tit"><a href='http://news.hit.edu.cn/2024/0227/c1510a235290/page.htm' target='_blank' title='我国航天领域首个！哈工大“空间环境地面模拟装置”通过国家验收！'>我国航天领域首个！哈工大“空间环境地面模拟装置”通过国家验收！</a></div>
+        </div>
+      
+                 
+      </div>
+  
+<div class="more_btn"><a href="http://www.hit.edu.cn/11549/list.htm" target="_blank"> . . . </a></div>
+</div>
+<script>
+
+ 
+    </script>
+<!-- banner --> 
+<!-- 内容 -->
+<div class="main">
+  <div class="row-a1">
+    <div class="wp clearfix">
+      <div class="left1 clearfix">
+      <div class="a1_center aos-init" data-aos="fade-up">
+
+        <div class="post post1 post-13 mbox" frag="窗口13" portletmode="simpleNews" configs="{'c28':'320','c14':'1','c1':'1','c29':'1','c39':'300','c38':'100','c21':'0','c4':'1','c6':'-1','c9':'0','c12':'0','c30':'0','c37':'1','c31':'0','c16':'1','c27':'320','c15':'0','c32':'','c5':'_blank','c40':'1','c17':'0','c19':'yyyy-MM-dd','c33':'500','c2':'序号,标题,发布时间','c23':'1','c41':'240','c7':'1','c13':'200','c43':'0','c24':'240','c35':'-1:-1','c3':'10','c8':'1','c44':'1','c25':'320','c34':'300','c18':'yyyy-MM-dd','c20':'0','c42':'320','c10':'45','c11':'1','c36':'0','c26':'1','c22':'0'}" contents="{'c2':'0', 'c1':'/工大要闻'}" style="display: block;">
+          <div class="tt">
+						<h3 class="tit"><span class="title" frag="标题">工大要闻</span> </h3>
+						
+					</div>
+          <div class="more_btn g-titl1" frag="按钮" type="更多"> <a href="http://news.hit.edu.cn/" class="w13_more"><span class="more" frag="按钮内容">更多 <em class="icon iconfont"></em></span></a> </div>       
+                      <div class="m-newsl">
+              <ul class="ul-listl3">
+                
+                <li class="i1">
+                  <div class="con"> <span class="date">04 - 16</span>
+                    <h3 class="tit"><a href='http://news.hit.edu.cn/2024/0416/c1510a235579/page.htm' target='_blank' title='习近平：加强文化遗产保护传承 弘扬中华优秀传统文化'>习近平：加强文化遗产保护传承 弘扬中华优秀传统文化</a></h3>
+                  
+                  </div>
+                </li>
+              
+                
+                <li class="i2">
+                  <div class="con"> <span class="date">04 - 16</span>
+                    <h3 class="tit"><a href='http://news.hit.edu.cn/2024/0416/c1510a235582/page.htm' target='_blank' title='南昌航空大学党委书记李德平一行来校调研'>南昌航空大学党委书记李德平一行来校调研</a></h3>
+                  
+                  </div>
+                </li>
+              
+                
+                <li class="i3">
+                  <div class="con"> <span class="date">04 - 16</span>
+                    <h3 class="tit"><a href='http://news.hit.edu.cn/2024/0416/c1510a235583/page.htm' target='_blank' title='哈工大师生团队创意设计“点亮”亚冬会倒计时300天主题活动'>哈工大师生团队创意设计“点亮”亚冬会倒计时300天主题活动</a></h3>
+                  
+                  </div>
+                </li>
+              
+                
+                <li class="i4">
+                  <div class="con"> <span class="date">04 - 15</span>
+                    <h3 class="tit"><a href='http://news.hit.edu.cn/2024/0415/c1510a235577/page.htm' target='_blank' title='哈工大召开党建工作领导小组会议暨全校党纪学习教育部署会'>哈工大召开党建工作领导小组会议暨全校党纪学习教育部署会</a></h3>
+                  
+                  </div>
+                </li>
+              
+                
+                <li class="i5">
+                  <div class="con"> <span class="date">04 - 15</span>
+                    <h3 class="tit"><a href='http://news.hit.edu.cn/2024/0415/c1510a235575/page.htm' target='_blank' title='《光明日报》报道哈工大游客参观热度持续'>《光明日报》报道哈工大游客参观热度持续</a></h3>
+                  
+                  </div>
+                </li>
+              
+                
+                <li class="i6">
+                  <div class="con"> <span class="date">04 - 13</span>
+                    <h3 class="tit"><a href='http://news.hit.edu.cn/2024/0413/c1510a235568/page.htm' target='_blank' title='哈工大机电学院杨立军教授团队研究成果为高性能锌基储能器件开发提供新思路'>哈工大机电学院杨立军教授团队研究成果为高性能锌基储能器件开发提供新思路</a></h3>
+                  
+                  </div>
+                </li>
+              
+                
+                <li class="i7">
+                  <div class="con"> <span class="date">04 - 13</span>
+                    <h3 class="tit"><a href='http://news.hit.edu.cn/2024/0411/c1510a235564/page.htm' target='_blank' title='向“光”而行 哈工大举行纪念马祖光院士诞辰96周年祭扫活动'>向“光”而行 哈工大举行纪念马祖光院士诞辰96周年祭扫活动</a></h3>
+                  
+                  </div>
+                </li>
+              
+                
+                <li class="i8">
+                  <div class="con"> <span class="date">04 - 13</span>
+                    <h3 class="tit"><a href='http://news.hit.edu.cn/2024/0412/c1510a235567/page.htm' target='_blank' title='哈工大第24颗卫星“天都二号”成功拍摄地月合影'>哈工大第24颗卫星“天都二号”成功拍摄地月合影</a></h3>
+                  
+                  </div>
+                </li>
+              
+                
+                <li class="i9">
+                  <div class="con"> <span class="date">04 - 12</span>
+                    <h3 class="tit"><a href='http://news.hit.edu.cn/2024/0412/c1510a235565/page.htm' target='_blank' title='英国皇家工程院院士孙彤校友受聘哈工大名誉教授'>英国皇家工程院院士孙彤校友受聘哈工大名誉教授</a></h3>
+                  
+                  </div>
+                </li>
+              
+                
+                <li class="i10">
+                  <div class="con"> <span class="date">04 - 12</span>
+                    <h3 class="tit"><a href='http://news.hit.edu.cn/2024/0412/c1510a235566/page.htm' target='_blank' title='哈工大牵头的国家重点研发计划“超分辨扫描显微检测仪”项目启动'>哈工大牵头的国家重点研发计划“超分辨扫描显微检测仪”项目启动</a></h3>
+                  
+                  </div>
+                </li>
+              
+                
+              </ul>
+            </div>
+          
+        </div>
+        
+      </div>
+      <div class="a1_left aos-init" data-aos="fade-right">
+        <div class="post post1 post-11 mbox" frag="窗口11" portletmode="simpleNews" configs="{'c28':'320','c14':'1','c1':'1','c29':'1','c39':'300','c38':'100','c21':'0','c4':'1','c6':'-1','c9':'0','c12':'0','c30':'0','c37':'1','c31':'0','c16':'1','c27':'320','c15':'0','c32':'','c5':'_blank','c40':'1','c17':'0','c19':'yyyy-MM-dd','c33':'500','c2':'序号,标题,发布时间,简介','c23':'1','c41':'240','c7':'1','c13':'200','c43':'0','c24':'240','c35':'-1:-1','c3':'1','c8':'1','c44':'0','c25':'320','c34':'300','c18':'yyyy-MM-dd','c20':'0','c42':'320','c10':'100','c11':'1','c36':'0','c26':'1','c22':'0'}" contents="{'c2':'0', 'c1':'/ 新闻聚焦'}">
+					<div class="tt">
+						<h3 class="tit"><span class="title" frag="标题"> 新闻聚焦</span> </h3>
+						
+					</div>
+                                       <div class="more_btn g-titl1" frag="按钮" type="更多"> <a href="http://news.hit.edu.cn/mtgd/list.htm" class="w11_more"><span class="more" frag="按钮内容">更多 <em class="icon iconfont"></em></span></a> </div>
+					<div class="con">
+													<ul class="news_list clearfix">
+								
+								<li class="news i1 clearfix">
+									<div class="news_imgs"><a href="https://wap.peopleapp.com/article/7394162/7226482" target="_blank"><img src="/_upload/article/images/aa/0a/a9bfc63a4f309d789cfd357f10dc/e03d467d-41b6-4dd4-88bc-14f564cea5d8.jpg">
+
+ <div class="news_con">
+											<div class="news_title">（讲述·弘扬科学家精神）沈世钊院士——为大型建筑撑起钢铁架构</div>
+										</div></a>
+</div>
+                                                           
+								</li>
+								
+							</ul>							
+						
+					</div>
+				</div>
+        <div class="post post1 post-12 mbox" frag="窗口12" portletmode="simpleNews" configs="{'c28':'320','c14':'1','c1':'1','c29':'1','c39':'300','c38':'100','c21':'0','c4':'1','c6':'-1','c9':'0','c12':'0','c30':'0','c37':'1','c31':'0','c16':'1','c27':'320','c15':'0','c32':'','c5':'_blank','c40':'1','c17':'0','c19':'yyyy-MM-dd','c33':'500','c2':'序号,标题,发布时间,简介','c23':'1','c41':'240','c7':'1','c13':'200','c43':'0','c24':'240','c35':'-1:-1','c3':'5','c8':'1','c44':'0','c25':'320','c34':'300','c18':'yyyy-MM-dd','c20':'0','c42':'320','c10':'40','c11':'1','c36':'0','c26':'1','c22':'0'}" contents="{'c2':'0', 'c1':'/ 新闻聚焦'}">
+         
+					<div class="con">
+													<ul class="news_list clearfix">
+								
+								<li class="news n1">
+									<div class="news_box clearfix">
+                    <div class="news_ly"><span class="ly">光明日报</span></div>
+                    <div class="news_con">
+											<div class="news_title"><a href='https://app.gmdaily.cn/as/opened/n/59b1a34f8a5f4b279cecc75ac51647c9' target='_blank' title='哈尔滨工业大学：逐梦苍穹，科学家精神薪火传'>哈尔滨工业大学：逐梦苍穹，科学家精神薪火传</a></div>
+										</div>
+                      
+                  </div>
+								</li>
+            
+								
+								<li class="news n2">
+									<div class="news_box clearfix">
+                    <div class="news_ly"><span class="ly">科技日报</span></div>
+                    <div class="news_con">
+											<div class="news_title"><a href='http://www.stdaily.com/index/kejixinwen/202404/a5f3723553f34c8695f00eed573c640d.shtml' target='_blank' title='冰与火的淬炼！“天都二号”成功拍摄地月合影'>冰与火的淬炼！“天都二号”成功拍摄地月合影</a></div>
+										</div>
+                      
+                  </div>
+								</li>
+            
+								
+								<li class="news n3">
+									<div class="news_box clearfix">
+                    <div class="news_ly"><span class="ly">黑龙江日报</span></div>
+                    <div class="news_con">
+											<div class="news_title"><a href='http://epaper.hljnews.cn/hljrb/pc/layout/202404/11/node_05.html' target='_blank' title='哈工大数学研究院 用好培养拔尖人才金钥匙'>哈工大数学研究院 用好培养拔尖人才金钥匙</a></div>
+										</div>
+                      
+                  </div>
+								</li>
+            
+								
+								<li class="news n4">
+									<div class="news_box clearfix">
+                    <div class="news_ly"><span class="ly">新华社</span></div>
+                    <div class="news_con">
+											<div class="news_title"><a href='https://h.xinhuaxmt.com/vh512/share/11949612?d=134d7c9&channel=weixin' target='_blank' title='半月谈丨把空间站装进大装置，分几步？'>半月谈丨把空间站装进大装置，分几步？</a></div>
+										</div>
+                      
+                  </div>
+								</li>
+            
+								
+							</ul>							
+						
+            
+					</div>
+				</div>
+      </div>
+      </div>
+      <div class="a1_right aos-init" data-aos="fade-left">
+        <div class="post post1 m-contactl" frag="窗口25" portletmode="simpleNews" configs="{'c28':'320','c14':'1','c1':'1','c29':'1','c39':'300','c38':'100','c21':'0','c4':'1','c6':'15','c9':'0'
+1000
+,'c12':'0','c30':'0','c37':'1','c31':'0','c16':'1','c27':'320','c15':'0','c32':'','c5':'_blank','c40':'1','c17':'0','c19':'yyyy-MM-dd','c33':'500','c2':'序号,标题,发布时间','c23':'1','c41':'240','c7':'1','c13':'200','c43':'0','c24':'240','c35':'-1:-1','c3':'2','c8':'1','c44':'0','c25':'320','c34':'300','c18':'yyyy-MM-dd','c20':'0','c42':'320','c10':'50','c11':'1','c36':'0','c26':'1','c22':'0'}" contents="{'c2':'0', 'c1':'/专题栏目'}">
+          <div class="tt">
+						<h3 class="tit"><span class="title" frag="标题">专题栏目</span> </h3>
+						
+					</div> 
+          <div class="more_btn g-titl1" frag="按钮" type="更多"> <a href="/11780/list.htm" class="w25_more"><span class="more" frag="按钮内容">更多 <em class="icon iconfont"></em></span></a> </div>
+                   
+       <div class="item">
+         <div class="box">
+           <div class="pic"><a href="http://news.hit.edu.cn/xjpxsd" target="_blank" title="学习贯彻习近平新时代中国特色社会主义思想主题教育"><img class="lazy_img" src="/_upload/article/images/e9/cf/17b85e7f406cbd8213f11c92337f/572c6ea6-3eeb-4e56-b343-a1e0106f185f.jpg"></a></div>
+         </div>
+       </div>
+       
+       <div class="item">
+         <div class="box">
+           <div class="pic"><a href="http://news.hit.edu.cn/hx/main.htm" target="_blank" title="贺信专题"><img class="lazy_img" src="/_upload/article/images/e6/71/716387fc478bb5efc8939bf6f7ef/b4228a28-b284-4fa4-b84f-be1d35e6b20c.png"></a></div>
+         </div>
+       </div>
+       
+       
+        </div>
+          <!-- 选项卡 -->
+  <div class="row-a2">
+    <div class="">
+      
+      <div class="m-campusl">
+       
+        <div class="m-listl4 aos-init" data-aos="fade-up">
+          <ul class="ul-listl4 clearfix">
+            <li class="i1" frag="窗口15" portletmode="simpleSudyNavi" contents="{'c2':'0', 'c1':'/图标链接/校园门户'}">
+              
+                
+						<ul class="clearfix">
+							
+							 <a href="http://i.hit.edu.cn" target="_blank" class="con"> <span class="icon iconfont"></span>
+                
+                <div class="txt">
+                  <h3 class="tit">校园门户</h3>
+                </div>
+                </a>  
+							
+						</ul>
+						 
+               
+              
+            </li>
+           
+            <li class="i2" frag="窗口17" portletmode="simpleSudyNavi" configs="{'c5':'0','c9':'0','c6':'0','c4':'_blank','c8':'2','c2':'1','c7':'2','c3':'6','c1':'1'}" contents="{'c2':'0', 'c1':'/图标链接/校内信息'}">
+                
+						<ul class="clearfix">
+							
+							 <a href="http://today.hit.edu.cn/" target="_blank" class="con"> <span class="icon iconfont"></span>
+                
+                <div class="txt">
+                  <h3 class="tit">校内信息</h3>
+                </div>
+                </a>  
+							
+						</ul>
+						 
+            </li>
+            <li class="i3" frag="窗口18" portletmode="simpleSudyNavi" configs="{'c5':'0','c9':'0','c4':'_blank','c8':'2','c2':'1','c7':'2','c3':'6','c1':'1'}" contents="{'c2':'0', 'c1':'/图标链接/电子邮箱'}">
+               
+						<ul class="clearfix">
+							
+							 <a href="https://mail.hit.edu.cn/" target="_blank" class="con"> <span class="icon iconfont" style="font-size: 48px;"></span>
+                
+                <div class="txt">
+                  <h3 class="tit">电子邮箱</h3>
+                </div>
+                </a>  
+							
+						</ul>
+						 
+            </li>
+            <li class="i4" frag="窗口19" portletmode="simpleSudyNavi" configs="{'c5':'0','c9':'0','c4':'_blank','c8':'2','c2':'1','c7':'2','c3':'6','c1':'1'}" contents="{'c2':'0', 'c1':'/图标链接/图书馆'}">
+                
+						<ul class="clearfix">
+							
+							 <a href="http://lib.hit.edu.cn/" target="_blank" class="con"> <span class="icon iconfont"></span>
+                
+                <div class="txt">
+                  <h3 class="tit">图书馆</h3>
+                </div>
+      
+4000
+          </a>  
+							
+						</ul>
+						 
+            </li>
+            <li class="i5" frag="窗口20" portletmode="simpleSudyNavi" configs="{'c5':'0','c9':'0','c4':'_blank','c8':'2','c2':'1','c7':'2','c3':'6','c1':'1','c6':'0'}" contents="{'c2':'0', 'c1':'/图标链接/办公系统'}">
+               
+						<ul class="clearfix">
+							
+							 <a href="http://oa.hit.edu.cn/" target="_blank" class="con"> <span class="icon iconfont"  style="font-size: 48px;"></span>
+                
+                <div class="txt">
+                  <h3 class="tit">办公系统</h3>
+                </div>
+                </a>  
+							
+						</ul>
+						 
+            </li>
+            <li class="i6" frag="窗口21" portletmode="simpleSudyNavi" configs="{'c5':'0','c9':'0','c4':'_blank','c8':'2','c2':'1','c7':'2','c3':'6','c1':'1','c6':'0'}" contents="{'c2':'0', 'c1':'/图标链接/人员招聘'}">
+               
+						<ul class="clearfix">
+							
+							 <a href="http://www.hit.edu.cn/glgw/list.htm" target="_blank" class="con"> <span class="icon iconfont"></span>
+                
+                <div class="txt">
+                  <h3 class="tit">人员招聘</h3>
+                </div>
+                </a>  
+							
+						</ul>
+						 
+            </li>
+            <li class="i7" frag="窗口22" portletmode="simpleSudyNavi" configs="{'c5':'0','c9':'0','c4':'_blank','c8':'2','c2':'1','c7':'2','c3':'6','c1':'1'}" contents="{'c2':'0', 'c1':'/图标链接/校园地图'}">
+               
+						<ul class="clearfix">
+							
+							 <a href="https://map.hit.edu.cn/" target="_blank" class="con"> <span class="icon iconfont" style="font-size: 50px;"></span>
+                
+                <div class="txt">
+                  <h3 class="tit">校园地图</h3>
+                </div>
+                </a>  
+							
+						</ul>
+						  
+            </li>
+            <li class="i8" frag="窗口23" portletmode="simpleSudyNavi" configs="{'c5':'0','c9':'0','c4':'_blank','c8':'2','c2':'1','c7':'2','c3':'6','c

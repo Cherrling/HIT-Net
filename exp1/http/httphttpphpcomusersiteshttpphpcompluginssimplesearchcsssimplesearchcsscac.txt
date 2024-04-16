@@ -1,0 +1,66 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Tue, 16 Apr 2024 14:02:47 GMT
+Content-Type: text/css; charset=utf-8
+Content-Length: 510
+Last-Modified: Fri, 26 Aug 2022 06:32:32 GMT
+Connection: keep-alive
+ETag: "63086900-1fe"
+Expires: Thu, 16 May 2024 14:02:47 GMT
+Cache-Control: max-age=2592000
+Accept-Ranges: bytes
+
+.search-wrapper .search-input {
+	width: 80%;
+	display: inline-block;
+}
+
+.search-submit {
+	display: inline-block;
+	border-radius: 4px;
+	background: #eee;
+	border: 1px solid #ccc;
+	vertical-align: top;
+}
+
+.search-submit img {
+	width: 20px;
+	vertical-align: middle;
+}
+
+.search-image {
+	float: left;
+}
+
+.search-item {
+	margin-left: 130px;
+	margin-bottom: 50px;
+}
+
+.search-item p {
+	margin: 0;
+}
+
+.search-title h3 {
+	margin: 0;
+}
+
+.search-details {
+	font-size: 13px;
+}
+
+.search-row:last-child hr {
+	display: none;
+}HTTP/1.1 400 Bad Request
+Server: nginx
+Date: Tue, 16 Apr 2024 14:02:47 GMT
+Content-Type: text/html; charset=utf-8
+Connection: close
+
+<html>
+<head><title>400 Bad Request</title><script src="//www.p2hp.com/tj.js?v=4"></script></head>
+<body>
+<center><h1>400 Bad Request</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>

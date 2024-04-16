@@ -1,0 +1,15 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Tue, 16 Apr 2024 14:02:47 GMT
+Content-Type: text/css; charset=utf-8
+Last-Modified: Sat, 14 Mar 2020 17:51:59 GMT
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+ETag: W/"5e6d19bf-3528"
+Expires: Thu, 16 May 2024 14:02:47 GMT
+Cache-Control: max-age=2592000
+Content-Encoding: gzip
+
+105d
+‹
