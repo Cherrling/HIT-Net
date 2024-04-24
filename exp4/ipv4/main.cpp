@@ -11,6 +11,8 @@
 #include <algorithm>
 #include <iomanip> // 用于设置输出格式
 using namespace std;
+FILE* fp;
+
 //#include<pcap.h>
 
 
@@ -97,10 +99,10 @@ string binaryToIPv4(char* buffer) {
 // 计算校验和
 unsigned short calculateIPv4Checksum(const char* buffer, size_t headerLength) {
     unsigned int sum = 0;
-	char header[40];
+	char header[80];
 	copy(buffer, buffer + headerLength,header);
-	//header[10] = 0;
-	//header[11] = 0;
+	header[10] = 0;
+	header[11] = 0;
 	//printCharArrayAsHex(header, headerLength);
     // 将每两个字节合并成一个 16 位字，并相加
     for (size_t i = 0; i < headerLength - 1; i += 2) {
@@ -113,11 +115,15 @@ unsigned short calculateIPv4Checksum(const char* buffer, size_t headerLength) {
     //}
 
 
-    // 将高 16 位与低 16 位相加
-    while (sum >> 16) {
-        sum = (sum & 0xFFFF) + (sum >> 16);
-    }
+     //将高 16 位与低 16 位相加
+     while (sum >> 16) {
+         sum = (sum & 0xFFFF) + (sum >> 16);
+     }
+	 sum += (static_cast<unsigned char>(buffer[10]) << 8) + static_cast<unsigned char>(buffer[11]);
 
+	 while (sum >> 16) {
+		 sum = (sum & 0xFFFF) + (sum >> 16);
+	 }
     // 取反得到校验和
 	//cout<<static_cast<unsigned short>(~sum)<<"check\n";
     return static_cast<unsigned short>(~sum);
@@ -139,40 +145,53 @@ int ip_recv(char* buffer, unsigned short length)
 	int TTL = (unsigned short)buffer[8];
 	string dstAddr = binaryToIPv4(buffer);
 	//cout << version<<"v\n";
-	//cout << headLength<<"headlength\n";
+	cout << headLength<<"headlength\n";
 	//cout << TTL<<"TTL\n";
 	//cout << dstAddr<<"dstaddr\n";
 	//判断版本号是否出错
 	if (version != 4)
 	{
 		cout << "版本号错\n";
+		fprintf(fp, u8"版本号错\n");
+
 		return 1;
 	}
 	//判断头部长度是否出错
-	if (headLength < 5)
+	if (headLength != 5)
 	{
 		cout << "头部长度错\n";
+		fprintf(fp, u8"头部长度错\n");
+
 		return 1;
 	}
 	//判断TTL是否出错
 	if (TTL <= 0)
 	{
 		cout << "TTL错\n";
+		fprintf(fp, u8"TTL错\n");
+
 		return 1;
-	}
-	//判断目的地址是否出错/本机或者广播
-	if (dstAddr != "192.168.214.138") {
-	//if (dstAddr != "192.168.214.138" && dstAddr != 0xffff) {
-		cout << "错误目标地址\n";
-		return 1;
-	}
+	}	
 	if ((calculateIPv4Checksum(buffer, headLength * 4) & 0xffff) != 0) {
 		cout << "校验和错\n";
+		fprintf(fp , u8"校验和错\n");
+
+		return 1;
+	}
+
+	//判断目的地址是否出错/本机或者广播
+	if (dstAddr != "192.168.110.138") {
+	//if (dstAddr != "192.168.214.138" && dstAddr != 0xffff) {
+		cout << "错误目标地址\n";
+		fprintf(fp, u8"错误目标地址\n");
+
 		return 1;
 	}
 
 	//ip_SendtoUp(pBuffer, length);
 	cout << "正确\n";
+	fprintf(fp, u8"正确\n");
+
 	return 0;
 }
 int checkfile(string filename) {
@@ -198,11 +217,16 @@ int checkfile(string filename) {
 
 int main() {
 	// 打开二进制文件
-
+	errno_t err;
+	if ((err = fopen_s(&fp, "result.txt", "w")) != 0) {
+		printf("无法打开文件\n");
+		return err;
+	}
 	std::string baseFilename = "2022112266/pro"; // 基本文件名
 	const int numFiles = 100; // 文件数量
 
 	for (int i = 0; i < numFiles; ++i) {
+		cout << i << endl;
 		std::string filename = baseFilename + std::to_string(i) + ".pcap";
 		checkfile(filename);
 	}

@@ -1,0 +1,4 @@
+﻿  main.cpp
+C:\Code\HIT-Net\exp4\ipv4-F\main.cpp(258,24): warning C4244: “初始化”: 从“std::streamsize”转换到“unsigned short”，可能丢失数据
+C:\Code\HIT-Net\exp4\ipv4-F\main.cpp(270,10): warning C4101: “err”: 未引用的局部变量
+  ipv4-F.vcxproj -> C:\Code\HIT-Net\exp4\ipv4-F\x64\Debug\ipv4-F.exe
