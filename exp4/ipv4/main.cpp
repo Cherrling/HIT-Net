@@ -9,6 +9,7 @@
 #include <iostream>
 #include <fstream>
 #include <algorithm>
+#include <iomanip> // 用于设置输出格式
 using namespace std;
 //#include<pcap.h>
 
@@ -46,6 +47,21 @@ using namespace std;
 //Caplen(4B)：当前数据区的长度，即抓取到的数据帧长度，由此可以得到下一个数据帧的位置。
 //
 //Len(4B)：离线数据长度，网路中实际数据帧的长度，一般不大于Caplen，多数情况下和Caplen值一样
+
+
+
+// 1.3.1Ethernet帧:
+// 解析pcap包，获取到一个数据块时，这个数据块就是以太帧，一般结构如下：
+
+
+// 1.目标地址(destination address,DA):6 字节
+
+// 2.源地址(source address,SA):6 字节
+
+// 3.类型(type)字段:用于辨别上层协议,2 字节（0x08 0x00 为IPv4）
+
+// 4.数据(data):64 到1500 字节
+
 //————————————————
 //
 //版权声明：本文为博主原创文章，遵循 CC 4.0 BY - SA 版权协议，转载请附上原文出处链接和本声明。
@@ -53,34 +69,17 @@ using namespace std;
 //原文链接：https ://blog.csdn.net/ytx2014214081/article/details/80112277
 
 
-
-
-
-
-
-int main() {
-	// 打开二进制文件
-	ifstream file("2022112266/pro0.pcap", ios::binary);
-
-	// 检查文件是否成功打开
-	if (!file.is_open()) {
-		cerr << "Failed to open file." << endl;
-		return 1;
+void printCharArrayAsHex(const char* arr, int size) {
+	for (int i = 0; i < size; ++i) {
+		std::cout << std::hex << std::setw(2) << std::setfill('0') << static_cast<int>(static_cast<unsigned char>(arr[i])) << " ";
 	}
-
-	// 读取文件内容
-	char buffer[1024]; // 用于存储读取的数据的缓冲区
-	file.read(buffer, sizeof(buffer)); // 从文件中读取数据到缓冲区
-	unsigned short length = file.gcount(); // 获取实际读取的字节数
-
-
-	// 关闭文件
-	file.close();
-
-	return 0;
+	std::cout << std::endl;
 }
-std::string binaryToIPv4(const char* bytes) {
+
+string binaryToIPv4(char* buffer) {
 	// 将连续四个字节的二进制解释为一个 32 位整数
+	char bytes[4];
+	copy(buffer + 16, buffer + 20, bytes);
 	unsigned int ipInt = 0;
 	for (int i = 0; i < 4; ++i) {
 		ipInt = (ipInt << 8) | static_cast<unsigned char>(bytes[i]);
@@ -95,17 +94,54 @@ std::string binaryToIPv4(const char* bytes) {
 	return ipAddress;
 }
 
+// 计算校验和
+unsigned short calculateIPv4Checksum(const char* buffer, size_t headerLength) {
+    unsigned int sum = 0;
+	char header[40];
+	copy(buffer, buffer + headerLength,header);
+	//header[10] = 0;
+	//header[11] = 0;
+	//printCharArrayAsHex(header, headerLength);
+    // 将每两个字节合并成一个 16 位字，并相加
+    for (size_t i = 0; i < headerLength - 1; i += 2) {
+        sum += (static_cast<unsigned char>(header[i]) << 8) + static_cast<unsigned char>(header[i + 1]);
+    }
+
+    //// 如果字节数为奇数，则将最后一个字节加到和中
+    //if (headerLength % 2 != 0) {
+    //    sum += static_cast<unsigned char>(header[headerLength - 1]) << 8;
+    //}
+
+
+    // 将高 16 位与低 16 位相加
+    while (sum >> 16) {
+        sum = (sum & 0xFFFF) + (sum >> 16);
+    }
+
+    // 取反得到校验和
+	//cout<<static_cast<unsigned short>(~sum)<<"check\n";
+    return static_cast<unsigned short>(~sum);
+}
+
+
+
+
+
+
 int ip_recv(char* buffer, unsigned short length)
 {
-	//pcap包前32位不是ipv4内容
-	copy(buffer + 32, buffer + length, buffer);
+	//pcap包前54位不是ipv4内容
+	copy(buffer + 54, buffer + length, buffer);
+	//printCharArrayAsHex(buffer, length);
 
 	int version = buffer[0] >> 4;
 	int headLength = buffer[0] & 0xf;//取最后16位
 	int TTL = (unsigned short)buffer[8];
-	int checkSum = ntohs(*(unsigned short*)(pbuffer + 10));
-	string dstAddr = binaryToIPv4(buffer[16])
-
+	string dstAddr = binaryToIPv4(buffer);
+	//cout << version<<"v\n";
+	//cout << headLength<<"headlength\n";
+	//cout << TTL<<"TTL\n";
+	//cout << dstAddr<<"dstaddr\n";
 	//判断版本号是否出错
 	if (version != 4)
 	{
@@ -125,31 +161,58 @@ int ip_recv(char* buffer, unsigned short length)
 		return 1;
 	}
 	//判断目的地址是否出错/本机或者广播
-	if (dstAddr != "192.168.214.138" && dstAddr != 0xffff) {
-		cout << "错误目标地址";
+	if (dstAddr != "192.168.214.138") {
+	//if (dstAddr != "192.168.214.138" && dstAddr != 0xffff) {
+		cout << "错误目标地址\n";
 		return 1;
 	}
-	//判断校验和是否出错
-	unsigned int sum = 0;
-	for (int i = 0; i < 10; i++)
-	{
-		sum += ((unsigned short*)pBuffer)[i];
+	if ((calculateIPv4Checksum(buffer, headLength * 4) & 0xffff) != 0) {
+		cout << "校验和错\n";
+		return 1;
 	}
-	sum = (sum >> 16) + (sum & 0xFFFF);
 
-	if (sum != 0xffff) {
-		ip_DiscardPkt(pBuffer, STUD_IP_TEST_CHECKSUM_ERROR);
+	//ip_SendtoUp(pBuffer, length);
+	cout << "正确\n";
+	return 0;
+}
+int checkfile(string filename) {
+	ifstream file(filename, ios::binary);
+
+	// 检查文件是否成功打开
+	if (!file.is_open()) {
+		cerr << "Failed to open file." << endl;
 		return 1;
 	}
-	//无错误
-	ip_SendtoUp(pBuffer, length);
+	// 读取文件内容
+	char buffer[1024]; // 用于存储读取的数据的缓冲区
+	file.read(buffer, sizeof(buffer)); // 从文件中读取数据到缓冲区
+	unsigned short length = file.gcount(); // 获取实际读取的字节数
+	//printCharArrayAsHex(buffer, length);
+	ip_recv(buffer, length);
+	// 关闭文件
+	file.close();
 	return 0;
 }
 
 
 
+int main() {
+	// 打开二进制文件
+
+	std::string baseFilename = "2022112266/pro"; // 基本文件名
+	const int numFiles = 100; // 文件数量
+
+	for (int i = 0; i < numFiles; ++i) {
+		std::string filename = baseFilename + std::to_string(i) + ".pcap";
+		checkfile(filename);
+	}
 
 
+
+
+
+	return 0;
+}
 
 
 
