@@ -1,2 +1,0 @@
-C:\Users\admin\Desktop\计算机网络\实验2\SR_Double_Server\SR_Double_Server\Debug\SR_Double_Server.exe
-C:\Users\admin\Desktop\计算机网络\实验2\SR_Double\SR_Double_Server\SR_Double_Server\Debug\SR_Double_Server.exe
