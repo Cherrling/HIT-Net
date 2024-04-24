@@ -186,7 +186,7 @@ int ip_recv(std::ofstream& outputFile,char* buffer, unsigned short length, const
 	//cout << version<<"v\n";
 	cout << headLength << "headlength\n";
 	//cout << TTL<<"TTL\n";
-	//cout << dstAddr<<"dstaddr\n";
+	cout << dstAddr<<"dstaddr\n";
 	//判断版本号是否出错
 	if (version != 4)
 	{
@@ -223,12 +223,12 @@ int ip_recv(std::ofstream& outputFile,char* buffer, unsigned short length, const
 
 	// 检查项是否找到
 	if (it != forward.end()) {
+		buffer[8] -= 1;
 		cout <<charArrayToHexString(buffer, 16, 4).data()<< "正确 转发\n";
 		//outputFile << u8"正确 转发 " << TTL - 1 << ' ' << u8"\n";
 		outputFile << u8"正确 转发 "<<TTL - 1<< ' '<< newIPv4Checksum(buffer,20)<< u8"\n";
 		return 0;
 	}
-
 	//判断目的地址是否出错/本机或者广播
 	if (dstAddr != "192.168.110.138") {
 		//if (dstAddr != "192.168.214.138" && dstAddr != 0xffff) {
@@ -238,9 +238,10 @@ int ip_recv(std::ofstream& outputFile,char* buffer, unsigned short length, const
 		return 1;
 	}
 
+
 	//ip_SendtoUp(pBuffer, length);
-	cout << "正确\n";
-	outputFile << u8"正确\n";
+	cout << "正确 接收\n";
+	outputFile << u8"正确 接收\n";
 
 	return 0;
 }
@@ -272,7 +273,7 @@ int main() {
 	std::string baseFilename = "2022112266/pro"; // 基本文件名
 	const int numFiles = 100; // 文件数量
 
-	std::vector<std::string> forward = { "192.168.214.2", "192.168.214.1", " 192.168.214.3", "43.168.142.77", "192.168.213.2", "192.168.142.2", "192.168.142.77", " 43.168.142.78", "43.168.142.65", "43.168.142.66", " 97.43.142.226", "97.43.142.225", "97.43.142.229" };
+	std::vector<std::string> forward = { "192.168.214.2", "192.168.214.1", "192.168.214.3", "43.168.142.77", "192.168.213.2", "192.168.142.2", "192.168.142.77", "43.168.142.78", "43.168.142.65", "43.168.142.66", "97.43.142.226", "97.43.142.225", "97.43.142.229" };
 
 	for (int i = 0; i < numFiles; ++i) {
 		cout << i << endl;
