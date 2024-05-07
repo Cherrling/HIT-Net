@@ -270,7 +270,8 @@ int main() {
 	// 打开二进制文件
 	errno_t err;
 	std::ofstream outputFile("result.txt", std::ios::out | std::ios::binary);
-	std::string baseFilename = "2022112266/pro"; // 基本文件名
+	//std::string baseFilename = "2022112266/pro"; // 基本文件名
+	std::string baseFilename = "2022111318/pro"; // 基本文件名
 	const int numFiles = 100; // 文件数量
 
 	std::vector<std::string> forward = { "192.168.214.2", "192.168.214.1", "192.168.214.3", "43.168.142.77", "192.168.213.2", "192.168.142.2", "192.168.142.77", "43.168.142.78", "43.168.142.65", "43.168.142.66", "97.43.142.226", "97.43.142.225", "97.43.142.229" };
