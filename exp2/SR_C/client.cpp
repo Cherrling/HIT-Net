@@ -13,8 +13,6 @@
 #define LOSS_RATE 0.2 // 丢包率
 using namespace std;
 
-//代码基本结构与服务器端一致，不在本份代码中做过多注释
-
 
 char cmdBuffer[50];
 char buffer[BUFFER_SIZE];
@@ -52,16 +50,11 @@ int main(int argc, char* argv[]) {
 	wVersionRequested = MAKEWORD(2, 2);
 	int err = WSAStartup(wVersionRequested, &wsaData);
 	if (err != 0) {
-		//printf("Winsock.dll 加载失败，错误码: %2d\n", err);
 		return -1;
 	}
 	if (LOBYTE(wsaData.wVersion) != LOBYTE(wVersionRequested) || HIBYTE(wsaData.wVersion) != HIBYTE(wVersionRequested)) {
-		//printf("找不到 %2d.%2d 版本的 Winsock.dll\n", LOBYTE(wVersionRequested), HIBYTE(wVersionRequested));
 		WSACleanup();
 		return -1;
-	}
-	else {
-		//printf("Winsock %2d.%2d 加载成功\n", LOBYTE(wVersionRequested), HIBYTE(wVersionRequested));
 	}
 	// 创建客户端套接字
 	SOCKET socketClient = socket(AF_INET, SOCK_DGRAM, 0);
@@ -85,7 +78,6 @@ int main(int argc, char* argv[]) {
 		gets_s(cmdBuffer, 50);
 		sscanf_s(cmdBuffer, "%s%s", cmd, sizeof(cmd) - 1, fileName, sizeof(fileName) - 1);
 		if (!strcmp(cmd, "up")) {
-			//printf("申请上传文件: %s\n", fileName);
 			strcpy_s(filePath, "./");
 			strcat_s(filePath, fileName);
 			ifstream infile(filePath);

@@ -57,9 +57,7 @@ int main(int argc, char* argv[]) {
 		WSACleanup();
 		return -1;
 	}
-	else {
-		//printf("Winsock %2d.%2d 加载成功\n", LOBYTE(wVersionRequested), HIBYTE(wVersionRequested));
-	}
+
 	// 创建服务器套接字
 	SOCKET socketServer = socket(AF_INET, SOCK_DGRAM, IPPROTO_UDP);
 	// 设置为非阻塞模式
@@ -72,7 +70,6 @@ int main(int argc, char* argv[]) {
 	// 绑定端口
 	if (err = bind(socketServer, (SOCKADDR*)&addrServer, sizeof(SOCKADDR))) {
 		err = GetLastError();
-		//printf("绑定端口 %2d 失败，错误码: % d\n", SERVER_PORT, err);
 		WSACleanup();
 		return -1;
 	}
@@ -87,7 +84,6 @@ int main(int argc, char* argv[]) {
 	int ack;
 	ofstream outfile;
 	ifstream infile;
-	//进入收到状态，注意服务器主要处理的任务是收到客户机请求，共有上载和下载两种任务
 	while (true) {
 		recvSize = recvfrom(socketServer, buffer, BUFFER_SIZE, 0, ((SOCKADDR*)&addrClient), &len);
 
@@ -105,10 +101,6 @@ int main(int argc, char* argv[]) {
 				}
 				strcpy_s(filePath, "./");
 				strcat_s(filePath, fileName);
-				//printf("收到来自客户端 %s 的请求: %s\n", addr, buffer);
-				//printf("是否同意该请求(Y/N)?");
-				//gets_s(cmdBuffer, 50);
-				//if (!strcmp(cmdBuffer, "Y")) {
 				if (1) {
 					buffer[0] = 100;
 					strcpy_s(buffer + 1, 3, "OK");
